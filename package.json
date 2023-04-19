@@ -1,0 +1,15 @@
+{
+    "name": "minescord",
+    "version": "1.0.0",
+    "description": "The best bot for Minecraft servers developed from end to end!",
+    
+    "main": "main.js",
+    "type": "commonjs",
+    "author": "Henry8K <henrythierrydev@gmail.com>",
+    
+    "license": "MIT",
+    "dependencies": {
+        "discord.js": "^13.3.0",
+        "minecraft-server-util": "^5.5.1"
+    }
+}
