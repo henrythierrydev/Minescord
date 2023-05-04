@@ -22,7 +22,6 @@ module.exports = {
     
             if(!member.permissions.has(PermissionsBitField.Flags.KickMembers)) 
             {
-
                 const npembed = new EmbedBuilder()
                    .setTimestamp()               
                    .setTitle("Error!")
@@ -41,8 +40,8 @@ module.exports = {
                 .setTimestamp()
                 .setColor("Random")
                 .setTitle("Admin Panel")
-                .setDescription("👋 • Welcome to the **Minescord** Admin Panel, here you can manage your server in an easy and practical way.\n\n🔔 • Included Resources:\n\n1. **Ban**\n> Punish users who are breaking your server's rules.\n\n2.**Kick**\n> Remove annoying people from your server.\n\n3. **Broadcast**\n> Send a responsive embed as an ad in a channel you prefer!")
                 .setImage("https://images7.alphacoders.com/110/1100122.jpg")
+                .setDescription("👋 • Welcome to the **Minescord** Admin Panel, here you can manage your server in an easy and practical way.\n\n🔔 • Included Resources:\n\n1. **Ban**\n> Punish users who are breaking your server's rules.\n\n2.**Kick**\n> Remove annoying people from your server.\n\n3. **Broadcast**\n> Send a responsive embed as an ad in a channel you prefer!")
 
             //---------------------
             //     CREATE MENU
@@ -58,185 +57,120 @@ module.exports = {
                         .setLabel('Ban')
                         .setValue('ban-option')
                         .setDescription('Use to ban a user from your server'),
-                    
+
                     new StringSelectMenuOptionBuilder()
                         .setEmoji("🔐")
                         .setLabel('Kick')
                         .setValue('kick-option')
                         .setDescription('Use to kick a user from your server'),
-
+                        
                     new StringSelectMenuOptionBuilder()
                         .setEmoji("📢")
                         .setLabel('Broadcast')
                         .setValue('broadcast-option')
-                        .setDescription('Use to broacast a embed in a channel'),
+                        .setDescription('Use to broacast a embed in a channel')        
                 );
-
-        const components = new ActionRowBuilder().addComponents(menu);                
-
+                
+            const components = new ActionRowBuilder()
+                .addComponents(menu);
+        
         //---------------------
-        //    SEND MESSAGE
+        //     SEND EMBED
         // --------------------
-
+        
         const userMention = interaction.user.toString();
 
         await interaction.reply({
             content: userMention,
             embeds: [configEmbed],
-            components: [components],
-            ephemeral: false
+            components: [components]
         });
 
         //---------------------
-        //  EMBED INTERACTION
+        //     MODAL LIST
         // --------------------
         
-        const filter = em => em.customId === 'panel-main';
-        const collector = interaction.channel.createMessageComponentCollector({ filter });
-        
-        collector.on('collect', async em =>
-        {        
-            if(em.customId === 'panel-main' && em.user.id === interaction.user.id) 
-            {
-                //---------------------
-                //     BAN COMMAND
-                // --------------------
+        const actions = {
+            'ban-option': {
+                title: 'Ban User',
+                inputs: [
+                    { label: 'User ID', customId: 'ban-user-id', style: TextInputStyle.Short, placeholder: 'Add the user discord ID.' },
+                    { label: 'Your ID', customId: 'ban-admin-id', style: TextInputStyle.Short, placeholder: 'Add your discord ID.' },
+                    { label: 'Reason', customId: 'ban-reason-id', style: TextInputStyle.Short, placeholder: 'Add the ban reason' }
+                ]
+            },
+            
+            'kick-option': {
+                title: 'Kick User',
+                inputs: [
+                    { label: 'User ID', customId: 'kick-user-id', style: TextInputStyle.Short, placeholder: 'Add the user discord ID.' },
+                    { label: 'Your ID', customId: 'kick-admin-id', style: TextInputStyle.Short, placeholder: 'Add your discord ID.' },
+                    { label: 'Reason', customId: 'kick-reason-id', style: TextInputStyle.Short, placeholder: 'Add the kick reason' }
+                ]
+            },
 
-                if(em.values[0] === 'ban-option') 
-                {
-                    const banModal = new ModalBuilder()
-                        .setCustomId('bmodal')
-                        .setTitle('Ban User');
-
-                    const userID = new TextInputBuilder()
-                        .setMinLength(18)
-                        .setMaxLength(18)
-                        .setLabel("User ID")
-                        .setCustomId('ban-user-id')
-                        .setStyle(TextInputStyle.Short)
-                        .setPlaceholder('Add the user discord ID.')
-                        .setRequired(true);
-        
-                    const adminID = new TextInputBuilder()
-                        .setMinLength(18)
-                        .setMaxLength(18)
-                        .setLabel("Your ID")
-                        .setCustomId('ban-admin-id')
-                        .setStyle(TextInputStyle.Short)
-                        .setPlaceholder('Add your discord ID.')
-                        .setRequired(true);
-
-                    const reason = new TextInputBuilder()
-                        .setMinLength(5)
-                        .setLabel("Reason")
-                        .setCustomId('ban-reason-id')
-                        .setStyle(TextInputStyle.Short)
-                        .setPlaceholder('Add the ban reason')
-                        .setRequired(true);
-
-                    const input1 = new ActionRowBuilder().addComponents(userID);
-                    const input2 = new ActionRowBuilder().addComponents(adminID);
-                    const input3 = new ActionRowBuilder().addComponents(reason);
-
-                    banModal.addComponents(input1, input2, input3);
-                    await em.showModal(banModal);
-                }
-
-                //---------------------
-                //     KICK COMMAND
-                // --------------------
-
-                if(em.values[0] === 'kick-option') 
-                {
-                    const kickModal = new ModalBuilder()
-                        .setCustomId('kmodal')
-                        .setTitle('Kick User');
-
-                    const userID = new TextInputBuilder()
-                        .setMinLength(18)
-                        .setMaxLength(18)
-                        .setLabel("User ID")
-                        .setCustomId('kick-user-id')
-                        .setStyle(TextInputStyle.Short)
-                        .setPlaceholder('Add the user discord ID.')
-                        .setRequired(true);
-        
-                    const adminID = new TextInputBuilder()
-                        .setMinLength(18)
-                        .setMaxLength(18)
-                        .setLabel("Your ID")
-                        .setCustomId('kick-admin-id')
-                        .setStyle(TextInputStyle.Short)
-                        .setPlaceholder('Add your discord ID.')
-                        .setRequired(true);
-
-                    const reason = new TextInputBuilder()
-                        .setMinLength(5)
-                        .setLabel("Reason")
-                        .setCustomId('kick-reason-id')
-                        .setStyle(TextInputStyle.Short)
-                        .setPlaceholder('Add the kick reason')
-                        .setRequired(true); 
-
-                    const input1 = new ActionRowBuilder().addComponents(userID);
-                    const input2 = new ActionRowBuilder().addComponents(adminID);
-                    const input3 = new ActionRowBuilder().addComponents(reason);
-
-                    kickModal.addComponents(input1, input2, input3);
-                    await em.showModal(kickModal);
-                }
-
-                //---------------------
-                //  BROADCAST COMMAND
-                // --------------------
-                
-                if(em.values[0] === 'broadcast-option') 
-                {
-                    const BroadcastModal = new ModalBuilder()
-                        .setCustomId('bmmodal')
-                        .setTitle('Send Broadcast');
-
-                    const brTitle = new TextInputBuilder()
-                        .setMinLength(5)
-                        .setLabel("Title")
-                        .setCustomId('br-title')
-                        .setStyle(TextInputStyle.Short)
-                        .setPlaceholder('Add the title of your broadcast.')
-                        .setRequired(true);
-        
-                    const brDescription = new TextInputBuilder()
-                        .setMinLength(20)
-                        .setLabel("Description")
-                        .setCustomId('br-description')
-                        .setStyle(TextInputStyle.Paragraph)
-                        .setPlaceholder('Add the description of your broadcast.')
-                        .setRequired(true);
-
-                    const brColor = new TextInputBuilder()
-                        .setMinLength(20)
-                        .setLabel("Color")
-                        .setCustomId('br-color')
-                        .setStyle(TextInputStyle.Short)
-                        .setPlaceholder('Example: #FF00FF')
-                        .setRequired(true);
-
-                    const brBanner = new TextInputBuilder()
-                        .setLabel("Banner")
-                        .setCustomId('br-banner')
-                        .setStyle(TextInputStyle.Short)
-                        .setPlaceholder('Add a broadcast banner link');                        
-
-                    const input1 = new ActionRowBuilder().addComponents(brTitle);
-                    const input2 = new ActionRowBuilder().addComponents(brDescription);
-                    const input3 = new ActionRowBuilder().addComponents(brColor);
-                    const input4 = new ActionRowBuilder().addComponents(brBanner);
-
-                    BroadcastModal.addComponents(input1, input2, input3, input4);
-                    await em.showModal(BroadcastModal);
-                }
+            'broadcast-option': {
+                title: 'Send Broadcast',
+                inputs: [
+                    { label: 'Title', customId: 'br-title', style: TextInputStyle.Short, placeholder: 'Add the title of your broadcast.' },
+                    { label: 'Description', customId: 'br-description', style: TextInputStyle.Paragraph, placeholder: 'Add the description of your broadcast.' },
+                    { label: 'Color', customId: 'br-color', style: TextInputStyle.Short, placeholder: 'Example: #FF00FF' },
+                    { label: 'Banner', customId: 'br-banner', style: TextInputStyle.Short, placeholder: 'Add a broadcast banner link' }
+                ]
             }
+        };
+
+        //---------------------
+        //  EMBED INTERACTION
+        // --------------------        
+        
+        const collector = interaction.channel.createMessageComponentCollector({ filter: em => em.customId === 'panel-main' });
+        
+        collector.on('collect', async (em) => 
+        {
+            if(em.user.id !== interaction.user.id) 
+            {
+               const errorEmbed = new EmbedBuilder()
+                   .setTimestamp()               
+                   .setTitle("Error!")
+                   .setColor("#f55a42")
+                   .setDescription("❎ • Oops, you cannot interact on other users' interactions in progress");
+                   
+                   await interaction.reply({ embeds:[npembed], ephemeral: false });
+                return;      
+            }
+        
+            const action = actions[em.values[0]];
+            if(!action) return;
+          
+            const modal = createModal(action.title, action.inputs);
+            await em.showModal(modal);
         });
 
+        //---------------------
+        //    GENERATE MODAL
+        // --------------------        
+        
+        function createModal(title, inputs) {
+            const modal = new ModalBuilder().setCustomId(`${title.toLowerCase().replace(' ', '-')}-modal`).setTitle(title);
+            
+            inputs.forEach((input) => 
+            {
+                const row = new ActionRowBuilder().addComponents(
+                    new TextInputBuilder()
+                        .setLabel(input.label)
+                        .setCustomId(input.customId)
+                        .setStyle(input.style)
+                        .setPlaceholder(input.placeholder)
+                        .setRequired(true)
+                );
+
+              modal.addComponents(row);
+            });
+
+            return modal;
+        }
+          
         //---------------------
         //  MODAL INTERACTION
         // --------------------
