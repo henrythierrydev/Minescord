@@ -30,7 +30,7 @@ client.on('ready', async () =>
 
     console.log(`[Minescord] => [v] Sucess => Logged in as ${client.user.tag}!`);
     console.log(`[Minescord] => [!] Alert => ${commandData.length} registred commands.`);
-    console.log(`[Minescord] => [L] Log => Check project github for updates: https://github.com/Henry8K/Minescord`)
+    console.log(`[Minescord] => [L] Log => Check project github for updates: https://github.com/Henry8K/Minescord`);
 
     managePresence(client);
 });
