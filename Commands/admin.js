@@ -126,10 +126,19 @@ module.exports = {
                         .setPlaceholder('Add your discord ID.')
                         .setRequired(true);
 
+                    const reason = new TextInputBuilder()
+                        .setMinLength(5)
+                        .setLabel("Reason")
+                        .setCustomId('ban-reason-id')
+                        .setStyle(TextInputStyle.Short)
+                        .setPlaceholder('Add the ban reason')
+                        .setRequired(true);
+
                     const input1 = new ActionRowBuilder().addComponents(userID);
                     const input2 = new ActionRowBuilder().addComponents(adminID);
+                    const input3 = new ActionRowBuilder().addComponents(reason);
 
-                    banModal.addComponents(input1, input2);
+                    banModal.addComponents(input1, input2, input3);
                     await em.showModal(banModal);
                 }
 
@@ -161,10 +170,19 @@ module.exports = {
                         .setPlaceholder('Add your discord ID.')
                         .setRequired(true);
 
+                    const reason = new TextInputBuilder()
+                        .setMinLength(5)
+                        .setLabel("Reason")
+                        .setCustomId('kick-reason-id')
+                        .setStyle(TextInputStyle.Short)
+                        .setPlaceholder('Add the kick reason')
+                        .setRequired(true); 
+
                     const input1 = new ActionRowBuilder().addComponents(userID);
                     const input2 = new ActionRowBuilder().addComponents(adminID);
+                    const input3 = new ActionRowBuilder().addComponents(reason);
 
-                    kickModal.addComponents(input1, input2);
+                    kickModal.addComponents(input1, input2, input3);
                     await em.showModal(kickModal);
                 }
 
@@ -203,7 +221,7 @@ module.exports = {
                         .setRequired(true);
 
                     const brBanner = new TextInputBuilder()
-                        .setLabel("Description")
+                        .setLabel("Banner")
                         .setCustomId('br-banner')
                         .setStyle(TextInputStyle.Short)
                         .setPlaceholder('Add a broadcast banner link');                        
@@ -215,7 +233,7 @@ module.exports = {
 
                     BroadcastModal.addComponents(input1, input2, input3, input4);
                     await em.showModal(BroadcastModal);
-                }                
+                }
             }
         });
 
