@@ -1,4 +1,5 @@
 const fs = require('fs');
+const managePresence = require('./Events/Status.js');
 const { token, guild_id } = require('./config.json');
 const { Client, Collection } = require('discord.js');
 const client = new Client({ intents: [1, 512, 32768, 2, 128] });
@@ -29,6 +30,9 @@ client.on('ready', async () =>
 
     console.log(`[Minescord] => [v] Sucess => Logged in as ${client.user.tag}!`);
     console.log(`[Minescord] => [!] Alert => ${commandData.length} registred commands.`);
+    console.log(`[Minescord] => [L] Log => Check project github for updates: https://github.com/Henry8K/Minescord`)
+
+    managePresence(client);
 });
 
 // =================
