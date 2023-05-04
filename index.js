@@ -1,5 +1,5 @@
 const fs = require('fs');
-const managePresence = require('./Events/Status.js');
+const managePresence = require('./Events/status.js');
 const { token, guild_id } = require('./config.json');
 const { Client, Collection } = require('discord.js');
 const client = new Client({ intents: [1, 512, 32768, 2, 128] });
@@ -43,10 +43,8 @@ client.on('ready', async () =>
 client.on('interactionCreate', async interaction => 
 {
     if(!interaction.isCommand()) return;
-
     const command = client.commands.get(interaction.commandName);
     if(!command) return;
- 
     await command.execute(interaction).catch(console.error);
 });
 
