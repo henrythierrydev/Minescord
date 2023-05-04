@@ -204,7 +204,7 @@ module.exports = {
 
                     const brBanner = new TextInputBuilder()
                         .setLabel("Description")
-                        .setCustomId('br-color')
+                        .setCustomId('br-banner')
                         .setStyle(TextInputStyle.Short)
                         .setPlaceholder('Add a broadcast banner link');                        
 
@@ -221,6 +221,6 @@ module.exports = {
 
         //---------------------
         //  MODAL INTERACTION
-        // --------------------        
+        // --------------------
     },
 };
