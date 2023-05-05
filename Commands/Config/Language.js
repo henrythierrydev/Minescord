@@ -103,7 +103,7 @@ module.exports =
                         .setTimestamp()
                         .setTitle(messages.general.sucess)
                         .setDescription("The language was changed to **English** successfully!\n\n**Warning** You need to reload the bot in the console to have the changes validated and the new implementations take effect.")
-                        .setColor("#e6de0b")
+                        .setColor("#0bfc03")
                         .setThumbnail(authorAvatar)
                     
                     
@@ -126,7 +126,7 @@ module.exports =
                         .setTimestamp()
                         .setTitle(messages.general.sucess)
                         .setDescription("O idioma foi alterado para **Português** com sucesso!\n\n**Aviso** Você precisa recarregar o bot no console para fazer com que as alterações sejam validadas e as novas implementações entrem em vigor.")
-                        .setColor("#e6de0b")
+                        .setColor("#0bfc03")
                         .setThumbnail(authorAvatar)
                     
                     await buttonInteraction.reply({
@@ -148,7 +148,7 @@ module.exports =
                         .setTimestamp()
                         .setTitle(messages.general.sucess)
                         .setDescription("La idioma se cambió con éxito a **Español**!\n\n**Advertencia:** Es necesario reiniciar el bot en la consola para que los cambios sean validados y las nuevas implementaciones tengan efecto.")
-                        .setColor("#e6de0b")
+                        .setColor("#0bfc03")
                         .setThumbnail(authorAvatar)
                     
                     
