@@ -2,6 +2,7 @@ const fs = require('fs');
 const managePresence = require('./Events/status.js');
 const { token, guild_id } = require('./config.json');
 const { Client, Collection } = require('discord.js');
+const { SlashCommandBuilder } = require('@discordjs/builders');
 const client = new Client({ intents: [1, 512, 32768, 2, 128] });
 
 // ================
@@ -10,11 +11,19 @@ const client = new Client({ intents: [1, 512, 32768, 2, 128] });
 // Function to verify and create new bot commands folder.
 
 client.commands = new Collection();
-const commandFiles = fs.readdirSync('./Commands').filter(file => file.endsWith('.js'));
+const commandFolders = fs.readdirSync('./Commands');
 
-for(const file of commandFiles) {
-    const command = require(`./Commands/${file}`);
-    client.commands.set(command.data.name, command);
+for(const folder of commandFolders) 
+{
+    const folderFiles = fs.readdirSync(`./Commands/${folder}`).filter(file => file.endsWith('.js'));    
+    
+    for(const file of folderFiles) {
+        const command = require(`./Commands/${folder}/${file}`);
+
+        if(command.data instanceof SlashCommandBuilder) {
+            client.commands.set(command.data.name, command);
+        }
+    }
 }
 
 // ================
@@ -29,7 +38,7 @@ client.on('ready', async () =>
     await client.application.commands.set(commandData, guildId);
 
     console.log(`[Minescord] => [v] Sucess => Logged in as ${client.user.tag}!`);
-    console.log(`[Minescord] => [!] Alert => ${commandData.length} registred commands.`);
+    console.log(`[Minescord] => [!] Alert => ${commandData.length} registered commands.`);
     console.log(`[Minescord] => [L] Log => Check project github for updates: https://github.com/Henry8K/Minescord`);
 
     managePresence(client);
@@ -44,6 +53,7 @@ client.on('interactionCreate', async interaction =>
 {
     if(!interaction.isCommand()) return;
     const command = client.commands.get(interaction.commandName);
+    
     if(!command) return;
     await command.execute(interaction).catch(console.error);
 });
