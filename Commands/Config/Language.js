@@ -1,5 +1,4 @@
-const {
-     EmbedBuilder, ButtonBuilder, PermissionFlagsBits, ButtonStyle, ActionRowBuilder, Embed } = require('discord.js');
+const { EmbedBuilder, ButtonBuilder, PermissionFlagsBits, ButtonStyle, ActionRowBuilder, Embed } = require('discord.js');
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
 const { getMessages, getCommands } = require('../../Languages/controller');
