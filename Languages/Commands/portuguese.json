@@ -1,0 +1,14 @@
+{
+    "language": {
+        "name": "idioma",
+        "description": "Altere o idioma padrão do bot do minescord.",
+
+        "embed": {
+            "title": "Idioma do Bot",
+            "description": "Altere o idioma do bot e torne-o ainda mais acessível para o seu servidor! Depois de selecionar o idioma, as mensagens e comandos registrados do bot serão todos no novo idioma escolhido.",
+            "en_button": "Inglês",
+            "pt_button": "Português",
+            "es_button": "Espanhol"
+        }
+    }
+}
