@@ -37,6 +37,9 @@ module.exports = {
             .setTimestamp()
             .setTitle(commands.socials.embed.title)
             .setDescription(commands.socials.embed.description)
-            .setColor("")
+            .setColor(commands.socials.embed.color)
+            .setThumbnail(commands.socials.embed.thumbnail)
     }
+
+    
 }
