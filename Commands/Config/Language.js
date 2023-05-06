@@ -8,7 +8,7 @@ const commands = getCommands();
 const fs = require('fs');
 const config = require('../../config.json');
 
-module.exports =
+module.exports = 
 {
     //---------------------
     //    SLASH BUILDER
@@ -25,7 +25,6 @@ module.exports =
         
         async execute(interaction)
         {
-            const member = interaction.member;
             const userMention = interaction.user.toString();
             const authorAvatar = interaction.member.user.avatarURL();
             
@@ -38,7 +37,7 @@ module.exports =
                 .setTitle(commands.language.embed.title)
                 .setDescription(commands.language.embed.description)
                 .setColor("#e6de0b")
-                .setThumbnail(authorAvatar)
+                .setThumbnail(authorAvatar);
 
             //---------------------
             //    BUTTON CREATOR
@@ -48,19 +47,19 @@ module.exports =
                 .setEmoji("🇺🇸")
                 .setCustomId("enbutton")
                 .setLabel(commands.language.embed.en_button)
-                .setStyle(ButtonStyle.Secondary)
+                .setStyle(ButtonStyle.Secondary);
 
             const ptButton = new ButtonBuilder()
                 .setEmoji("🇧🇷")
                 .setCustomId("ptbutton")
                 .setLabel(commands.language.embed.pt_button)
-                .setStyle(ButtonStyle.Secondary)
+                .setStyle(ButtonStyle.Secondary);
                 
             const esButton = new ButtonBuilder()
                 .setEmoji("🇪🇸")
                 .setCustomId("esbutton")
                 .setLabel(commands.language.embed.es_button)
-                .setStyle(ButtonStyle.Secondary)
+                .setStyle(ButtonStyle.Secondary);
                 
             //---------------------
             //  INTERACTION BUILD
@@ -104,7 +103,7 @@ module.exports =
                         .setTitle(messages.general.sucess)
                         .setDescription("The language was changed to **English** successfully!\n\n**Warning** You need to reload the bot in the console to have the changes validated and the new implementations take effect.")
                         .setColor("#0bfc03")
-                        .setThumbnail(authorAvatar)
+                        .setThumbnail(authorAvatar);
                     
                     
                     await buttonInteraction.reply({
@@ -127,13 +126,13 @@ module.exports =
                         .setTitle(messages.general.sucess)
                         .setDescription("O idioma foi alterado para **Português** com sucesso!\n\n**Aviso** Você precisa recarregar o bot no console para fazer com que as alterações sejam validadas e as novas implementações entrem em vigor.")
                         .setColor("#0bfc03")
-                        .setThumbnail(authorAvatar)
+                        .setThumbnail(authorAvatar);
                     
                     await buttonInteraction.reply({
                         content: userMention,
                         embeds: [ptEmbed]
                     });
-                }                
+                }
 
                 //---------------------
                 //   SPANISH BUTTON
@@ -149,7 +148,7 @@ module.exports =
                         .setTitle(messages.general.sucess)
                         .setDescription("La idioma se cambió con éxito a **Español**!\n\n**Advertencia:** Es necesario reiniciar el bot en la consola para que los cambios sean validados y las nuevas implementaciones tengan efecto.")
                         .setColor("#0bfc03")
-                        .setThumbnail(authorAvatar)
+                        .setThumbnail(authorAvatar);
                     
                     
                     await buttonInteraction.reply({
