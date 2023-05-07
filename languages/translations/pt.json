@@ -7,45 +7,6 @@
         }
     },
 
-    "clear": {
-        "slash": {
-            "name": "limpar",
-            "description": "limpar mensagens de chats do servidor.",
-
-            "option": {
-                "name": "quantidade",
-                "description": "digite um valor de 1 a 100 para limpar"
-            }
-        },
-
-        "embed": {
-            "error": {
-                "title": "Erro!",
-                "description": "❎ • Calma lá! Você só pode limpar de **1 a 100** mensagens no chat por vez. Seu apressadinho!",
-                "color": "#ff0800"
-            },
-
-            "sucess": {
-                "title": "Sucesso!",
-                "description": "✅ • o caminhão da faxina passou e foram limpas **{value}** mensagens do chat por **{author}**! Espero que esteja mais limpo agora.",
-                "color": "#00ff37"
-            }
-        }
-    },
-
-    "ping": {
-        "slash": {
-            "name": "ping",
-            "description": "veja o ping do bot e o ping do servidor"
-        },
-
-        "embed": {
-            "title": "Ping?",
-            "description": "> Então, pediram por ping? 🏓 • Pong!\n\n```1. API: {api} ms\n\n2. Gateway: {gateway} ms```",
-            "color": "#0073ff"
-        }
-    },
-
     "avatar": {
         "slash": {
             "name": "avatar",
@@ -80,6 +41,90 @@
             "description": "> 🖼 • Não fique por fora das novidades do servidor! Acompanhe nossas redes sociais e esteja sempre por dentro das atualizações diárias/semanais.\n\n> 🔗 • Clique na rede social que você mais gosta e comece a seguir nosso perfil agora mesmo! Assim você não perde nenhuma das novidades que estamos preparando para você.\n\n> 👨‍👩‍👧‍👦 • E não se esqueça de compartilhar nossas páginas com seus amigos! Assim, você ajuda a nossa comunidade a crescer e a chegar a cada vez mais pessoas. Juntos, podemos fazer do nosso servidor um lugar ainda mais incrível!",
             "color": "#07ba1f",
             "banner": "https://wallpapercave.com/wp/wp6746829.jpg"
+        }
+    },
+
+    "clear": {
+        "slash": {
+            "name": "limpar",
+            "description": "limpar mensagens de chats do servidor.",
+
+            "option": {
+                "name": "quantidade",
+                "description": "digite um valor de 1 a 100 para limpar"
+            }
+        },
+
+        "embed": {
+            "error": {
+                "title": "Erro!",
+                "description": "❎ • Calma lá! Você só pode limpar de **1 a 100** mensagens no chat por vez. Seu apressadinho!",
+                "color": "#ff0800"
+            },
+
+            "sucess": {
+                "title": "Sucesso!",
+                "description": "✅ • o caminhão da faxina passou e foram limpas **{value}** mensagens do chat por **{author}**! Espero que esteja mais limpo agora.",
+                "color": "#00ff37"
+            }
+        }
+    },
+
+    "kick": {
+        "slash": {
+            "name": "expulsar",
+            "description": "expulse um membro incoveniente do servidor",
+
+            "option1": {
+                "name": "usuario",
+                "description": "selecione um usuario do servidor"
+            },
+
+            "option2": {
+                "name": "motivo",
+                "description": "motivo do kick entre 10 a 100 caracteres"
+            }
+        },
+
+        "embed": {
+            "error": {
+                "reason": {
+                    "title": "Erro!",
+                    "description": "🛑 • Calma lá! Antes de expulsar o usuário defina um motivo da expulsão entre 10 a 100 caracteres para que assim possamos tornar isso ainda melhor :D.",
+                    "color": "#ff0800"
+                },
+
+                "admin": {
+                    "title": "Big Adm?",
+                    "description": "🛑 • Calma lá! Você não pode expulsar outro membro que também seja adminstrador do servidor! O que você está pensando?",
+                    "color": "#ff0800"
+                },
+
+                "bot": {
+                    "title": "Bip Bup?",
+                    "description": "🛑 • Calma lá! Você não pode expulsar bots do servidor! Assim você quebra a interação entre eles, seu chato!",
+                    "color": "#ff0800"
+                }                
+            },
+
+            "sucess": {
+                "title": "Sucesso!",
+                "description": "> ✅ • O usuário **{victim}** foi expulso do servidor com sucesso por **{author_name}**, Ninguém mandou violar as regras seu boboca!\n\n> 📒 • Motivo: {reason}.",
+                "color": "#00ff37"
+            }
+        }
+    },
+
+    "ping": {
+        "slash": {
+            "name": "ping",
+            "description": "veja o ping do bot e o ping do servidor"
+        },
+
+        "embed": {
+            "title": "Ping?",
+            "description": "> Então, pediram por ping? 🏓 • Pong!\n\n```1. API: {api} ms\n\n2. Gateway: {gateway} ms```",
+            "color": "#0073ff"
         }
     }
 }
