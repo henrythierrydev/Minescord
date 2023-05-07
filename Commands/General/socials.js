@@ -1,10 +1,10 @@
 const { EmbedBuilder, ButtonBuilder, ButtonStyle, ActionRowBuilder} = require('discord.js');
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
-const { getMessages, getCommands } = require('../../Languages/controller');
-const { execute } = require('../Config/language');
-const messages = getMessages();
+const { getCommands } = require('../../Languages/controller');
 const commands = getCommands();
+
+const database = require('../../Resources/socials.json'); 
 
 // -------------------
 //    COMMAND START
@@ -27,7 +27,6 @@ module.exports = {
     async execute(interaction)
     {
         const userMention = interaction.user.toString();
-        const authorAvatar = interaction.member.user.avatarURL();
         
         // -------------------
         //    EMBED BUILDER
@@ -38,8 +37,95 @@ module.exports = {
             .setTitle(commands.socials.embed.title)
             .setDescription(commands.socials.embed.description)
             .setColor(commands.socials.embed.color)
-            .setThumbnail(commands.socials.embed.thumbnail)
-    }
+            .setImage(commands.socials.embed.thumbnail);
 
-    
+        // -------------------
+        //   YOUTUBE BUTTON
+        // -------------------
+
+        const row = new ActionRowBuilder();
+        
+        if(database.links.youtube.active === "true") 
+        {
+            const yt = new ButtonBuilder()
+                .setLabel("Youtube")
+                .setStyle(ButtonStyle.Link)
+                .setURL(database.links.youtube.link)
+                .setEmoji(database.links.youtube.emoji);
+
+                row.addComponents(yt);
+        }
+
+        // -------------------
+        //   TWITTER BUTTON
+        // -------------------
+        
+        if(database.links.twitter.active === "true")
+        {
+            const tw = new ButtonBuilder()
+                .setLabel("Twitter")
+                .setStyle(ButtonStyle.Link)
+                .setURL(database.links.twitter.link)
+                .setEmoji(database.links.twitter.emoji);
+
+                row.addComponents(tw);
+        }
+        
+        // -------------------
+        //  INSTAGRAM BUTTON
+        // -------------------
+
+        if(database.links.instagram.active === "true")
+        {
+            const is = new ButtonBuilder()
+                .setLabel("Instagram")
+                .setStyle(ButtonStyle.Link)
+                .setURL(database.links.instagram.link)
+                .setEmoji(database.links.instagram.emoji);
+
+                row.addComponents(is);
+        }
+
+        // -------------------
+        //    REDDIT BUTTON
+        // -------------------
+
+        if(database.links.reddit.active === "true")
+        {
+            const rd = new ButtonBuilder()
+                .setLabel("Reddit")
+                .setStyle(ButtonStyle.Link)
+                .setURL(database.links.reddit.link)
+                .setEmoji(database.links.reddit.emoji);
+
+                row.addComponents(rd);
+        }
+
+        // -------------------
+        //    REDDIT BUTTON
+        // -------------------
+
+        if(database.links.facebook.active === "true")
+        {
+            const fb = new ButtonBuilder()
+                .setLabel("Facebook")
+                .setStyle(ButtonStyle.Link)
+                .setURL(database.links.facebook.link)
+                .setEmoji(database.links.facebook.emoji);
+
+                row.addComponents(fb);
+        }
+
+        const rows = [row];
+
+        // -------------------
+        //    EMBED SENDER
+        // -------------------
+
+        await interaction.reply({
+            content: userMention,
+            embeds: [socialembed],
+            components: rows
+        });
+    }
 }
