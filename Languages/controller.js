@@ -8,7 +8,7 @@ let lang = config.lang || "en";
 const languages = ["en", "es", "pt"];
 
 // -------------------
-//   SUPPORTED LANGS
+//   LANG NOT FOUND
 // -------------------
 
 if(!languages.includes(lang)) 
