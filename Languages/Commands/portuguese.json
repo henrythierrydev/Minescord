@@ -57,5 +57,26 @@
                 "color": "#45fc03"
             }
         }
+    },
+
+    "avatar": {
+        "name": "avatar",
+        "description": "Vizualize e baixe avatares de membros do servidor.",
+
+        "slash_option": {
+            "name": "membro",
+            "description": "selecione um membro para pegar o avatar (opcional)"
+        },        
+
+        "embed": {
+            "title": "Avatar",
+            "description": "> 🖼 • Aqui está o avatar do usuário **{user_name}**, lindo, não? Também adorei :D.\n\n> 🔗 • Para baixar o avatar para você basta clicar no botão de download abaixo!",
+            "color": "#45fc03",
+
+            "button": {
+                "label": "Baixar",
+                "emoji": "🔗"
+            }
+        }
     }
 }
