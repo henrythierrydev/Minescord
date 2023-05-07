@@ -1,0 +1,27 @@
+{
+    "clear": {
+        "slash": {
+            "name": "limpar",
+            "description": "limpar mensagens de chats do servidor.",
+
+            "option": {
+                "name": "quantidade",
+                "description": "digite um valor de 1 a 100 para limpar"
+            }
+        },
+
+        "embed": {
+            "error": {
+                "title": "Erro!",
+                "description": "❎ • Calma lá! Você só pode limpar de **1 a 100** mensagens no chat por vez. Seu apressadinho!",
+                "color": "lightred"
+            },
+
+            "sucess": {
+                "title": "Sucesso!",
+                "description": "✅ • a caminhão da faxina passou e foram limpas **{value}** do chat por **{author}**! Espero que esteja mais limpo agora.",
+                "color": "lightgreen"
+            }
+        }
+    }
+}
