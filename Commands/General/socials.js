@@ -4,7 +4,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { getCommands } = require('../../Languages/controller');
 const commands = getCommands();
 
-const database = require('../../Resources/socials.json'); 
+const data = require('../../Resources/socials.json'); 
 
 // -------------------
 //    COMMAND START
@@ -45,13 +45,13 @@ module.exports = {
 
         const row = new ActionRowBuilder();
         
-        if(database.links.youtube.active === "true") 
+        if(data.links.youtube.active === "true") 
         {
             const yt = new ButtonBuilder()
                 .setLabel("Youtube")
                 .setStyle(ButtonStyle.Link)
-                .setURL(database.links.youtube.link)
-                .setEmoji(database.links.youtube.emoji);
+                .setURL(data.links.youtube.link)
+                .setEmoji(data.links.youtube.emoji);
 
                 row.addComponents(yt);
         }
@@ -60,13 +60,13 @@ module.exports = {
         //   TWITTER BUTTON
         // -------------------
         
-        if(database.links.twitter.active === "true")
+        if(data.links.twitter.active === "true")
         {
             const tw = new ButtonBuilder()
                 .setLabel("Twitter")
                 .setStyle(ButtonStyle.Link)
-                .setURL(database.links.twitter.link)
-                .setEmoji(database.links.twitter.emoji);
+                .setURL(data.links.twitter.link)
+                .setEmoji(data.links.twitter.emoji);
 
                 row.addComponents(tw);
         }
@@ -75,13 +75,13 @@ module.exports = {
         //  INSTAGRAM BUTTON
         // -------------------
 
-        if(database.links.instagram.active === "true")
+        if(data.links.instagram.active === "true")
         {
             const is = new ButtonBuilder()
                 .setLabel("Instagram")
                 .setStyle(ButtonStyle.Link)
-                .setURL(database.links.instagram.link)
-                .setEmoji(database.links.instagram.emoji);
+                .setURL(data.links.instagram.link)
+                .setEmoji(data.links.instagram.emoji);
 
                 row.addComponents(is);
         }
@@ -90,13 +90,13 @@ module.exports = {
         //    REDDIT BUTTON
         // -------------------
 
-        if(database.links.reddit.active === "true")
+        if(data.links.reddit.active === "true")
         {
             const rd = new ButtonBuilder()
                 .setLabel("Reddit")
                 .setStyle(ButtonStyle.Link)
-                .setURL(database.links.reddit.link)
-                .setEmoji(database.links.reddit.emoji);
+                .setURL(data.links.reddit.link)
+                .setEmoji(data.links.reddit.emoji);
 
                 row.addComponents(rd);
         }
@@ -105,13 +105,13 @@ module.exports = {
         //    REDDIT BUTTON
         // -------------------
 
-        if(database.links.facebook.active === "true")
+        if(data.links.facebook.active === "true")
         {
             const fb = new ButtonBuilder()
                 .setLabel("Facebook")
                 .setStyle(ButtonStyle.Link)
-                .setURL(database.links.facebook.link)
-                .setEmoji(database.links.facebook.emoji);
+                .setURL(data.links.facebook.link)
+                .setEmoji(data.links.facebook.emoji);
 
                 row.addComponents(fb);
         }
