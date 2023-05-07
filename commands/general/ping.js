@@ -37,6 +37,7 @@ module.exports =
             await interaction.reply({
                 content: mention,
                 embeds: [ping]
-        });
+            }
+        );
     }
 };
