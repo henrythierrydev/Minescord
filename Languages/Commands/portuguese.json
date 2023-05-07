@@ -10,5 +10,28 @@
             "pt_button": "Português",
             "es_button": "Espanhol"
         }
+    },
+
+    "socials": {
+        "name": "redes",
+        "description": "acompanhe as redes sociais do servidor!",
+
+        "embed": {
+            "title": "Redes Sociais",
+            "description": "> 🖼 • Acompanhe as redes sociais do servidor e fique por dentro de novidades e atualizações diárias/semanais. Clique na rede social preferida abaixo e começe a nos seguir!",
+            "color": "#54f542",
+            "thumbnail": "https://images.hdqwalls.com/download/minecraft-4k-wc-2560x1440.jpg"
+        }
+    },
+
+    "ping": {
+        "name": "ping",
+        "description": "verificar ping do gateway do bot e seu ping!",
+
+        "embed": {
+            "title": "Ping?",
+            "description": "> Uhhh, então pediram por ping? Aqui está! A latência sua e da aplicação está em:\n\n```Gateway Ping: {gatewayPing} ms\n\nApi Ping: {apiPing} ms```",
+            "color": "#eb9b34"
+        }
     }
 }
