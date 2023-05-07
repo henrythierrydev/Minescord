@@ -4,7 +4,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { getTranslation } = require('../../languages/controller');
 const lang = getTranslation(); 
 
-const data = require('../../resources/about.json'); 
+const data = require('../../resources/socials.json'); 
 
 module.exports = 
 {
