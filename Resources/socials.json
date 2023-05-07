@@ -1,0 +1,33 @@
+{
+    "links": {
+        "youtube": {
+            "active": "true",
+            "link": "https://youtube.com/",
+            "emoji": "📺"
+        },
+
+        "instagram": {
+            "active": "true",
+            "link": "https://instagram.com/",
+            "emoji": "📸"
+        },
+
+        "twitter": {
+            "active": "true",
+            "link": "https://twitter.com/",
+            "emoji": "🐦"
+        },
+
+        "reddit": {
+            "active": "true",
+            "link": "https://reddit.com/",
+            "emoji": "👽"
+        },
+
+        "facebook": {
+            "active": "true",
+            "link": "https://facebook.com/",
+            "emoji": "💙"
+        }        
+    }
+}
