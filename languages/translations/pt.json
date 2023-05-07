@@ -3,7 +3,7 @@
         "permission": {
             "title": "Erro!",
             "description": "❎ • Oops! Parece que você não é um administrador! Infelizmente somente **Admins** podem executar esse comando. Que pena.",
-            "color": "darkred"
+            "color": "#d10b04"
         }
     },
 
@@ -22,39 +22,45 @@
             "error": {
                 "title": "Erro!",
                 "description": "❎ • Calma lá! Você só pode limpar de **1 a 100** mensagens no chat por vez. Seu apressadinho!",
-                "color": "lightred"
+                "color": "#ff0800"
             },
 
             "sucess": {
                 "title": "Sucesso!",
-                "description": "✅ • a caminhão da faxina passou e foram limpas **{value}** do chat por **{author}**! Espero que esteja mais limpo agora.",
-                "color": "lightgreen"
+                "description": "✅ • o caminhão da faxina passou e foram limpas **{value}** mensagens do chat por **{author}**! Espero que esteja mais limpo agora.",
+                "color": "#00ff37"
             }
         }
     },
 
     "ping": {
         "slash": {
-            "title": "ping",
+            "name": "ping",
             "description": "veja o ping do bot e o ping do servidor"
         },
 
         "embed": {
             "title": "Ping?",
-            "description": "Então, pediram por ping? 🏓 • Pong!\n\n>1. API:\n>O ping da api está em {api} ms no momento!\n\n2. Gateway:\n>O ping da gateway está em {gateway} ms agora!",
-            "color": "lightcyan"
+            "description": "> Então, pediram por ping? 🏓 • Pong!\n\n```1. API: {api} ms\n\n2. Gateway: {gateway} ms```",
+            "color": "#0073ff"
         }
     },
 
     "avatar": {
         "slash": {
-            "title": "avatar",
-            "description": "veja e baixe o seu avatar ou de outros membros"
+            "name": "avatar",
+            "description": "veja e baixe o seu avatar ou de outros membros",
+
+            "option": {
+                "name": "membro",
+                "description": "selecione um membro do servidor"
+            }
         },
 
         "embed": {
             "title": "Avatar",
             "description": "🖼 • Aqui está o avatar do usuário **{user_name}**, lindo, não? Também adorei :D.\n\n 🔗 • Para baixar o avatar para você basta clicar no botão de download abaixo!",
+            "color": "#0776ba",
 
             "button": {
                 "label": "Baixar",
@@ -65,14 +71,15 @@
 
     "socials": {
         "slash": {
-            "title": "redes",
+            "name": "redes",
             "description": "veja as redes sociais do servidor e nos acompanhe"
         },
 
         "embed": {
             "title": "Redes",
-            "description": "> 📸 • Aqui estão nossas redes sociais do servidor",
-            "color": "green"
+            "description": "> 🖼 • Não fique por fora das novidades do servidor! Acompanhe nossas redes sociais e esteja sempre por dentro das atualizações diárias/semanais.\n\n> 🔗 • Clique na rede social que você mais gosta e comece a seguir nosso perfil agora mesmo! Assim você não perde nenhuma das novidades que estamos preparando para você.\n\n> 👨‍👩‍👧‍👦 • E não se esqueça de compartilhar nossas páginas com seus amigos! Assim, você ajuda a nossa comunidade a crescer e a chegar a cada vez mais pessoas. Juntos, podemos fazer do nosso servidor um lugar ainda mais incrível!",
+            "color": "#07ba1f",
+            "banner": "https://wallpapercave.com/wp/wp6746829.jpg"
         }
     }
 }
