@@ -31,5 +31,35 @@
                 "color": "lightgreen"
             }
         }
+    },
+
+    "ping": {
+        "slash": {
+            "title": "ping",
+            "description": "veja o ping do bot e o ping do servidor"
+        },
+
+        "embed": {
+            "title": "Ping?",
+            "description": "Então, pediram por ping? 🏓 • Pong!\n\n>1. API:\n>O ping da api está em {api} ms no momento!\n\n2. Gateway:\n>O ping da gateway está em {gateway} ms agora!",
+            "color": "lightcyan"
+        }
+    },
+
+    "avatar": {
+        "slash": {
+            "title": "avatar",
+            "description": "veja e baixe o seu avatar ou de outros membros"
+        },
+
+        "embed": {
+            "title": "Avatar",
+            "description": "🖼 • Aqui está o avatar do usuário **{user_name}**, lindo, não? Também adorei :D.\n\n 🔗 • Para baixar o avatar para você basta clicar no botão de download abaixo!",
+
+            "button": {
+                "label": "Baixar",
+                "emoji": "🔗"
+            }
+        }
     }
 }
