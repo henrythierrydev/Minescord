@@ -24,7 +24,7 @@ module.exports =
 
     async execute(interaction) 
     {
-        const user = interaction.options.getUser(commands.avatar.slash.option.name) || interaction.user;
+        const user = interaction.options.getUser(lang.avatar.slash.option.name) || interaction.user;
         const avatar = user.displayAvatarURL({ format: 'png', size: 2048 });
         const mention = interaction.user.toString();
         const name = user.username;
@@ -47,7 +47,7 @@ module.exports =
         download = new ButtonBuilder()
             .setLabel(lang.avatar.embed.button.label)
             .setStyle(ButtonStyle.Link)
-            .setURL(userAvatar)
+            .setURL(avatar)
             .setEmoji(lang.avatar.embed.button.emoji);
 
             const modules = new ActionRowBuilder().addComponents(download);

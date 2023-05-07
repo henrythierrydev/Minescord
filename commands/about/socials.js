@@ -14,7 +14,7 @@ module.exports =
 
     data: new SlashCommandBuilder()
         .setName(lang.socials.slash.name)
-        .setDescription(commands.socials.slash.description),
+        .setDescription(lang.socials.slash.description),
 
     // -------------------
     //   COMMAND EXECUTE
@@ -30,9 +30,10 @@ module.exports =
         
         const social = new EmbedBuilder()
             .setTimestamp()
-            .setTitle(commands.socials.embed.title)
-            .setDescription(commands.socials.embed.description)
-            .setColor(commands.socials.embed.color);
+            .setTitle(lang.socials.embed.title)
+            .setDescription(lang.socials.embed.description)
+            .setColor(lang.socials.embed.color)
+            .setImage(lang.socials.embed.banner);
 
         // -------------------
         //   BUTTON BUILDER
@@ -46,7 +47,7 @@ module.exports =
             if(data.socials[platform].active)
             {
                 const socials = new ButtonBuilder()
-                    .setLabel(platform)
+                    .setLabel(platform.charAt(0).toUpperCase() + platform.slice(1))
                     .setStyle(ButtonStyle.Link)
                     .setURL(data.socials[platform].link)
                     .setEmoji(data.socials[platform].emoji);
@@ -64,7 +65,8 @@ module.exports =
         await interaction.reply({
             content: mention,
             embeds: [social],
-            components: rows
+            components: rows,
+            ephemeral: false
         });
     }
 };

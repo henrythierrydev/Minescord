@@ -27,18 +27,18 @@ module.exports =
     {
         const author = interaction.user.username;
         const mention = interaction.user.toString();
-        const value = interaction.options.getInteger(lang.clear.option.name);
+        const value = interaction.options.getInteger(lang.clear.slash.option.name);
         
         // -------------------
         //     PERMS CHECK
         // -------------------
         
-        if(!author.has(PermissionFlagsBits.Administrator)) 
+        if(!interaction.member.permissions.has(PermissionFlagsBits.Administrator)) 
         {
             permission = new EmbedBuilder()
-                .setTitle(commands.universal.permission.title)
-                .setDescription(commands.universal.permission.description)
-                .setColor(commands.universal.permission.color)
+                .setTitle(lang.universal.permission.title)
+                .setDescription(lang.universal.permission.description)
+                .setColor(lang.universal.permission.color)
                 .setTimestamp();
             
                 return interaction.reply({
@@ -56,9 +56,9 @@ module.exports =
         if(value < 1 || value > 100) 
         {    
             error = new EmbedBuilder()
-                .setTitle(commands.clear.embed.error.title)
-                .setDescription(commands.clear.embed.error.description)
-                .setColor(commands.clear.embed.error.color)
+                .setTitle(lang.clear.embed.error.title)
+                .setDescription(lang.clear.embed.error.description)
+                .setColor(lang.clear.embed.error.color)
                 .setTimestamp();
                 
                 return interaction.reply({
@@ -76,9 +76,9 @@ module.exports =
         await interaction.channel.bulkDelete(value, true);
         
         sucess = new EmbedBuilder()
-            .setTitle(commands.clear.embed.sucess.title)
-            .setDescription(commands.clear.embed.sucess.description.replace('{value}', value).replace('{author}', author))
-            .setColor(commands.clear.embed.sucess.color)
+            .setTitle(lang.clear.embed.sucess.title)
+            .setDescription(lang.clear.embed.sucess.description.replace('{value}', value).replace('{author}', author))
+            .setColor(lang.clear.embed.sucess.color)
             .setTimestamp();
 
             return interaction.reply({

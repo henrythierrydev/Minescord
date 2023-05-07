@@ -20,9 +20,9 @@ module.exports =
 
     async execute(interaction)
     {
-        const gateway = interaction.client.ws.ping;
+        const gateway = (interaction.client.ws.ping);
         const mention = interaction.user.toString();
-        const api = Date.now() - interaction.createdTimestamp;
+        const api = (Date.now() - interaction.createdTimestamp);
 
         // -------------------
         //    EMBED BUILDER
