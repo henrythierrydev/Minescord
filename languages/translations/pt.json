@@ -61,5 +61,18 @@
                 "emoji": "🔗"
             }
         }
+    },
+
+    "socials": {
+        "slash": {
+            "title": "redes",
+            "description": "veja as redes sociais do servidor e nos acompanhe"
+        },
+
+        "embed": {
+            "title": "Redes",
+            "description": "> 📸 • Aqui estão nossas redes sociais do servidor",
+            "color": "green"
+        }
     }
 }
