@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, PermissionFlagsBits } = require('discord.js');
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
 const { getTranslation } = require('../../languages/controller');
@@ -23,15 +23,35 @@ module.exports =
     //   COMMAND EXECUTE
     // -------------------
 
-    async execute(interaction) 
+    async execute(interaction)
     {
-        // -------------------
-        //    LIMIT CHECK
-        // -------------------
-
         const author = interaction.user.username;
         const mention = interaction.user.toString();
         const value = interaction.options.getInteger(lang.clear.option.name);
+        
+        // -------------------
+        //     PERMS CHECK
+        // -------------------
+        
+        if(!author.has(PermissionFlagsBits.Administrator)) 
+        {
+            permission = new EmbedBuilder()
+                .setTitle(commands.universal.permission.title)
+                .setDescription(commands.universal.permission.description)
+                .setColor(commands.universal.permission.color)
+                .setTimestamp();
+            
+                return interaction.reply({
+                    content: mention,
+                    embeds: [permission],
+                    ephemeral: true
+                }
+            );
+        }
+        
+        // -------------------
+        //     LIMIT CHECK
+        // -------------------
 
         if(value < 1 || value > 100) 
         {    
