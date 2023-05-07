@@ -7,25 +7,25 @@
         },
 
         "instagram": {
-            "active": "true",
+            "active": "false",
             "link": "https://instagram.com/",
             "emoji": "📸"
         },
 
         "twitter": {
-            "active": "true",
+            "active": "false",
             "link": "https://twitter.com/",
             "emoji": "🐦"
         },
 
         "reddit": {
-            "active": "true",
+            "active": "false",
             "link": "https://reddit.com/",
             "emoji": "👽"
         },
 
         "facebook": {
-            "active": "true",
+            "active": "false",
             "link": "https://facebook.com/",
             "emoji": "💙"
         }        
