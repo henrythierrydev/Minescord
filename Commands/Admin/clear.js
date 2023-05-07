@@ -38,7 +38,7 @@ module.exports =
         const userMention = interaction.user.toString();
         const value = interaction.options.getInteger(commands.clear.slash_option.name);
 
-        if(value < 1 || value > 1000) {
+        if(value < 1 || value > 100) {
             
             valueError = new EmbedBuilder()
                 .setTitle(commands.clear.embed.error.title)
