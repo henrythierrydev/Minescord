@@ -21,7 +21,7 @@ module.exports =
     async execute(interaction)
     {
         const gateway = interaction.client.ws.ping;
-        const userMention = interaction.user.toString();
+        const mention = interaction.user.toString();
         const api = Date.now() - interaction.createdTimestamp;
 
         // -------------------
@@ -35,7 +35,7 @@ module.exports =
             .setTimestamp();
             
             await interaction.reply({
-                content: userMention,
+                content: mention,
                 embeds: [ping]
         });
     }
