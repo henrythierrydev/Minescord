@@ -41,7 +41,7 @@
 
         "slash_option": {
             "name": "quantidade",
-            "description": "limite maximo de 1000 mensagens para limpar!"
+            "description": "limite maximo de 100 mensagens para limpar!"
         },
 
         "embed": {
