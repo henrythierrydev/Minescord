@@ -44,6 +44,51 @@
         }
     },
 
+    "ban": {
+        "slash": {
+            "name": "banir",
+            "description": "de ban em um usuário chato do seu servidor",
+
+            "option1": {
+                "name": "usuario",
+                "description": "selecione um usuario do servidor"
+            },
+
+            "option2": {
+                "name": "motivo",
+                "description": "motivo do ban entre 10 a 100 caracteres"
+            }
+        },
+
+        "embed": {
+            "error": {
+                "reason": {
+                    "title": "Erro!",
+                    "description": "🛑 • Calma lá! Antes de banir o usuário defina um motivo da expulsão entre 10 a 100 caracteres para que assim possamos tornar isso ainda melhor :D.",
+                    "color": "#ff0800"
+                },
+
+                "admin": {
+                    "title": "Big Adm?",
+                    "description": "🛑 • Calma lá! Você não pode banir outro membro que também seja adminstrador do servidor! O que você está pensando?",
+                    "color": "#ff0800"
+                },
+
+                "bot": {
+                    "title": "Bip Bup?",
+                    "description": "🛑 • Calma lá! Você não pode banir bots do servidor! Assim você quebra a interação entre eles, seu chato!",
+                    "color": "#ff0800"
+                }                
+            },
+
+            "sucess": {
+                "title": "Sucesso!",
+                "description": "> ✅ • O usuário **{victim}** foi banido do servidor com sucesso por **{author_name}**, Ninguém mandou violar as regras seu boboca!\n\n> 📒 • Motivo: {reason}.",
+                "color": "#00ff37"
+            }
+        }
+    },
+
     "clear": {
         "slash": {
             "name": "limpar",
