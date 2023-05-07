@@ -47,7 +47,7 @@
         "embed": {
             "error": {
                 "title": "Erro!",
-                "description": "> 📛 • Eupaaa! Calma lá! Você só pode limpar entre 1 a 1000 mensagens por vez! Tente novamente mais tarde seu apressadinho!",
+                "description": "> 📛 • Eupaaa! Calma lá! Você só pode limpar entre 1 a 100 mensagens por vez! Tente novamente mais tarde seu apressadinho!",
                 "color": "#fc2403"
             },
 
