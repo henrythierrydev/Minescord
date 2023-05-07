@@ -1,4 +1,12 @@
 {
+    "universal": {
+        "permission": {
+            "title": "Erro!",
+            "description": "❎ • Oops! Parece que você não é um administrador! Infelizmente somente **Admins** podem executar esse comando. Que pena.",
+            "color": "darkred"
+        }
+    },
+
     "clear": {
         "slash": {
             "name": "limpar",
