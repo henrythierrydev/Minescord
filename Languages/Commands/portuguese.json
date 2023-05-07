@@ -33,5 +33,29 @@
             "description": "> Uhhh, então pediram por ping? Aqui está! A latência sua e da aplicação está em:\n\n```Gateway Ping: {gatewayPing} ms\n\nApi Ping: {apiPing} ms```",
             "color": "#eb9b34"
         }
+    },
+
+    "clear": {
+        "name": "limpar",
+        "description": "limpe mensagens incovenientes do chat!",
+
+        "slash_option": {
+            "name": "quantidade",
+            "description": "limite maximo de 1000 mensagens para limpar!"
+        },
+
+        "embed": {
+            "error": {
+                "title": "Erro!",
+                "description": "> 📛 • Eupaaa! Calma lá! Você só pode limpar entre 1 a 1000 mensagens por vez! Tente novamente mais tarde seu apressadinho!",
+                "color": "#fc2403"
+            },
+
+            "sucess": {
+                "title": "Sucesso!",
+                "description": "> ✅ • A faxina passou e foram limpas **{value}** mensagens do canal por **{userName}**. Acredito que agora esteja mais limpo talvez...",
+                "color": "#45fc03"
+            }
+        }
     }
 }
