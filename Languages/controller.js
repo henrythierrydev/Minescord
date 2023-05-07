@@ -14,7 +14,7 @@ const languages = ["en", "es", "pt"];
 if(!languages.includes(lang)) 
 {
     console.log("[Minescord] => [C] Critical => Selected Language not found!");
-    console.log("[Minescord] => [L] Log => Default lang seted to English!");
+    console.log("[Minescord] => [L] Log => Default language set to English!");
     lang = "en";
 }
 
