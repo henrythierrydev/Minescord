@@ -253,7 +253,7 @@
                 "color": "#fc3003"
             }
         }
-    },    
+    },
 
     "ping": {
         "slash": {
@@ -265,6 +265,19 @@
             "title": "Ping?",
             "description": "> Então, pediram por ping? 🏓 • Pong!\n\n```1. API: {api} ms\n\n2. Gateway: {gateway} ms```",
             "color": "#0073ff"
+        }
+    },
+
+    "serverInfo": {
+        "slash": {
+            "name": "server_info",
+            "description": "informações gerais sobre o servidor"
+        },
+
+        "embed": {
+            "title": "Informações do servidor:",
+            "description": "> 🌐 • Aqui estão as informações sobre o servidor em tempo real:\n\n```👑 Dono: {owner_id}\n👥 Membros totais: {member_count}\n📕 Cargos totais: {role_count}\n💻 Bots totais: {bot_count}\n📟 Canais totais: {channel_count}```\n> No final das contas... É um belo servidor!",
+            "color": "#34e5eb"
         }
     },
 
