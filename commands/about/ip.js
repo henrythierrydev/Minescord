@@ -1,4 +1,4 @@
-const { EmbedBuilder, ButtonBuilder, ButtonStyle, ActionRowBuilder } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
 const { getTranslation } = require('../../languages/controller');
@@ -22,23 +22,11 @@ module.exports =
 
     async execute(interaction) 
     {
-        let port = "";
         const ip = data.server.ip;
         const name = data.server.name;
+        const port = data.server.port;
         const user = interaction.user.username;
         const mention = interaction.user.toString();
-
-        // -------------------
-        //     PORT CHECK
-        // -------------------        
-
-        if(data.server.type === "bedrock" && data.server.port === "default") {
-            port = "19132";
-        }
-
-        if(data.server.type === "java" && data.server.port === "default") {
-            port = "Default";
-        }
 
         // -------------------
         //    EMBED BUILDER
@@ -58,7 +46,7 @@ module.exports =
 
         // -------------------
         //     SEND EMBED
-        // -------------------            
+        // -------------------
 
         await interaction.reply({
             content: mention,
