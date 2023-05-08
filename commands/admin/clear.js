@@ -81,11 +81,14 @@ module.exports =
             .setColor(lang.clear.embed.sucess.color)
             .setTimestamp();
 
-            return interaction.reply({
-                content: mention,
-                embeds: [sucess],
-                ephemeral: false
-            }
-        );
+        // -------------------
+        //     SEND EMBED
+        // -------------------
+
+        return interaction.reply({
+            content: mention,
+            embeds: [sucess],
+            ephemeral: false
+        });
     },
 };
