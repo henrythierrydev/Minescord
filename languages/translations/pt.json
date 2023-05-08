@@ -57,6 +57,40 @@
         }
     },
 
+    "status": {
+        "slash": {
+            "name": "status",
+            "description": "veja o status atual do servidor"
+        },
+
+        "embed": {
+            "sucess": {
+                "title": "Status do servidor:",
+                "description": "```Status: {online_check}\nPlayers: {current_players}/{max_players}```\n> 🟢 • Status em tempo real para o servidor: **{server_name}**",
+                "color": "#eb8634"
+            },
+
+            "error": {
+                "notfound": {
+                    "title": "Erro de Status!",
+                    "description": "> 🛑 • Oops! Pareçe que não foi possível encontrar nenhum servidor com esse **IP/porta**, contate o administrador do servidor para fazer uma correção! [404]",                        "color": "#ff0800"
+                },
+                
+                "maintence": {
+                    "title": "Servidor em manutenção!",
+                    "description": "> 🧰 • Oops! O servidor atualmente está em manutenção, estaremos de volta em breve! Obrigado pela sua compreensão.",
+                    "color": "#f5dd0a"
+                },
+                
+                "nrealeased": {
+                    "title": "Servidor Offline!",
+                    "description": "> 🏠 • Oops! O servidor atualmente está em construção, em breve ele será lançado! Obrigado pela sua compreensão.",
+                    "color": "#f5dd0a"                        
+                }
+            }
+        }
+    },
+
     "ban": {
         "slash": {
             "name": "banir",
@@ -182,7 +216,7 @@
         "embed": {
             "sucess": {
                 "title": "Canal Bloqueado!",
-                "description": "> 🔒 • O canal foi bloqueado com sucesso por **{author}**, agora nenhum membro com permissões padrões podem enviar mensagens nesse canal! Para desbloquear use **/unlock**!",
+                "description": "> 🔒 • O canal foi bloqueado com sucesso por **{author}**, agora nenhum membros com permissões padrões podem enviar mensagens nesse canal! Para desbloquear use **/unlock**!",
                 "color": "#fcba03"
             },
 
@@ -203,7 +237,7 @@
         "embed": {
             "sucess": {
                 "title": "Canal Desbloqueado!",
-                "description": "> 🔓 • O canal foi desbloqueado com sucesso por **{author}**, agora todos os membro podem enviar mensagens nesse canal novamente! Para bloquear use **/lock**!",
+                "description": "> 🔓 • O canal foi desbloqueado com sucesso por **{author}**, agora todos os membros podem enviar mensagens nesse canal novamente! Para bloquear use **/lock**!",
                 "color": "#fcba03"
             },
 
