@@ -184,5 +184,40 @@
             "description": "> Então, pediram por ping? 🏓 • Pong!\n\n```1. API: {api} ms\n\n2. Gateway: {gateway} ms```",
             "color": "#0073ff"
         }
+    },
+
+    "userInfo": {
+        "slash": {
+            "name": "user_info",
+            "description": "veja informações de usuários do servidor",
+
+            "option": {
+                "name": "usuario",
+                "description": "selecione um usuario do servidor"
+            }
+        },
+        
+        "embed": {
+            "title": "Informações do usuário",
+            "color": "#07ba1f",
+
+            "field1": "🔖 TAG:",
+            "field2": "👤 Nome:",
+            "field3": "#️⃣ ID:",
+            "field4": "📆 Entrou Em:",
+
+            "button": {
+                "label": "Seguir",
+                "emoji": "💎"
+            },
+
+            "error": {
+                "bot": {
+                    "title": "Bip Bup?",
+                    "description": "🛑 • Calma lá! Você está tentando ver perfis de bots? Infelizmente não é possivel, não somos humanos :(",
+                    "color": "#ff0800"
+                }
+            }
+        }
     }
 }
