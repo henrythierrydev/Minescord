@@ -19,9 +19,9 @@
         },
 
         "embed": {
-            "title": "Avatar",
+            "title": "Avatar de {user_name}",
             "description": "🖼 • Aqui está o avatar do usuário **{user_name}**, lindo, não? Também adorei :D.\n\n 🔗 • Para baixar o avatar para você basta clicar no botão de download abaixo!",
-            "color": "#0776ba",
+            "color": "#fc03c2",
 
             "button": {
                 "label": "Baixar",
@@ -169,6 +169,27 @@
                 "title": "Sucesso!",
                 "description": "> ✅ • O usuário **{victim}** foi expulso do servidor com sucesso por **{author_name}**, Ninguém mandou violar as regras seu boboca!\n\n> 📒 • Motivo: {reason}.",
                 "color": "#00ff37"
+            }
+        }
+    },
+
+    "lock": {
+        "slash": {
+            "name": "lock",
+            "description": "evite que usuários mandem mensagem bloqueando o canal!"
+        },
+        
+        "embed": {
+            "sucess": {
+                "title": "Canal Bloqueado!",
+                "description": "> 🔒 • O canal foi bloqueado com sucesso por **{author}**, agora nenhum membro com permissões padrões podem enviar mensagens nesse canal! Para desbloquear use **/unlock**!",
+                "color": "#fcba03"
+            },
+
+            "error": {
+                "title": "Erro ao Bloquear!",
+                "description": "> ⛔ • Você não pode bloquear um canal que já está bloqueado, para usar esse comando neste canal, antes dê **/unlock**!",
+                "color": "#fc3003"
             }
         }
     },
