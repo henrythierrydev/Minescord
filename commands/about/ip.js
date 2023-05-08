@@ -56,6 +56,10 @@ module.exports =
                 .replace('{server_name}', name)
             );
 
+        // -------------------
+        //     SEND EMBED
+        // -------------------            
+
         await interaction.reply({
             content: mention,
             embeds: [embed],
