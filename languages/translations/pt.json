@@ -194,6 +194,27 @@
         }
     },
 
+    "unlock": {
+        "slash": {
+            "name": "unlock",
+            "description": "desbloqueei canais que usuários possam interagir!"
+        },
+        
+        "embed": {
+            "sucess": {
+                "title": "Canal Desbloqueado!",
+                "description": "> 🔓 • O canal foi desbloqueado com sucesso por **{author}**, agora todos os membro podem enviar mensagens nesse canal novamente! Para bloquear use **/lock**!",
+                "color": "#fcba03"
+            },
+
+            "error": {
+                "title": "Erro ao Desbloquear!",
+                "description": "> ⛔ • Você não pode desbloquear um canal que já está desbloqueado, para usar esse comando neste canal, antes dê **/lock**!",
+                "color": "#fc3003"
+            }
+        }
+    },    
+
     "ping": {
         "slash": {
             "name": "ping",
