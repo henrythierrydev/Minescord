@@ -22,7 +22,9 @@ module.exports =
 
     async execute(interaction)
     {
+        const row = new ActionRowBuilder();
         const mention = interaction.user.toString();
+        const socialsPlatforms = ['youtube', 'twitter', 'instagram', 'reddit', 'facebook'];
         
         // -------------------
         //    EMBED BUILDER
@@ -39,9 +41,6 @@ module.exports =
         //   BUTTON BUILDER
         // -------------------
 
-        const row = new ActionRowBuilder();
-        const socialsPlatforms = ['youtube', 'twitter', 'instagram', 'reddit', 'facebook'];
-
         for(const platform of socialsPlatforms) 
         {
             if(data.socials[platform].active)
@@ -55,11 +54,11 @@ module.exports =
                 row.addComponents(socials);
             }
         }
-
+    
         const rows = [row];
 
         // -------------------
-        //    EMBED SENDER
+        //     SEND EMBED
         // -------------------
 
         await interaction.reply({
