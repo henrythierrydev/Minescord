@@ -30,6 +30,19 @@
         }
     },
 
+    "ip": {
+        "slash": {
+            "name": "ip",
+            "description": "veja o ip do servidor e venha jogar conosco!"
+        },
+
+        "embed": {
+            "title": "IP do servidor",
+            "description": "> 👋 • Olá **{user_name}** venha jogar conosco no {server_name} e se divertir ainda mais, copie e insira o IP abaixo para entrar no servidor!\n\n```IP: {server_ip}\nPorta: {server_port}```\n> Bom jogo!",
+            "color": "#34d8eb"
+        }
+    },
+
     "socials": {
         "slash": {
             "name": "redes",
