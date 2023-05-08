@@ -35,7 +35,7 @@ module.exports =
         //    EMBED BUILDER
         // -------------------
 
-        const embed = new EmbedBuilder()
+        const mainEmbed = new EmbedBuilder()
             .setTitle(lang.avatar.embed.title.replace('{user_name}', name))
             .setDescription(lang.avatar.embed.description.replace('{user_name}', name))
             .setColor(lang.avatar.embed.color)
@@ -46,13 +46,13 @@ module.exports =
         //   BUTTON BUILDER
         // -------------------
             
-        download = new ButtonBuilder()
+        const downloadButton = new ButtonBuilder()
             .setLabel(lang.avatar.embed.button.label)
             .setStyle(ButtonStyle.Link)
             .setURL(avatar)
             .setEmoji(lang.avatar.embed.button.emoji);
 
-        const modules = new ActionRowBuilder().addComponents(download);
+        const modules = new ActionRowBuilder().addComponents(downloadButton);
             
         // -------------------
         //     SEND EMBED
@@ -60,7 +60,7 @@ module.exports =
 
         await interaction.reply({
             content: mention,
-            embeds: [embed],
+            embeds: [mainEmbed],
             components: [modules],
             ephemeral: false
         });

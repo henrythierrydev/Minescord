@@ -4,7 +4,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { getTranslation } = require('../../languages/controller');
 const lang = getTranslation(); 
 
-const data = require('../../resources/socials.json'); 
+const data = require('../../resources/socials.json');
 
 module.exports = 
 {
@@ -30,7 +30,7 @@ module.exports =
         //    EMBED BUILDER
         // -------------------
         
-        const social = new EmbedBuilder()
+        const socialEmbed = new EmbedBuilder()
             .setTimestamp()
             .setTitle(lang.socials.embed.title)
             .setDescription(lang.socials.embed.description)
@@ -45,17 +45,17 @@ module.exports =
         {
             if(data.socials[platform].active)
             {
-                const socials = new ButtonBuilder()
+                const socialsButton = new ButtonBuilder()
                     .setLabel(platform.charAt(0).toUpperCase() + platform.slice(1))
                     .setStyle(ButtonStyle.Link)
                     .setURL(data.socials[platform].link)
                     .setEmoji(data.socials[platform].emoji);
 
-                row.addComponents(socials);
+                row.addComponents(socialsButton);
             }
         }
     
-        const rows = [row];
+        const components = [row];
 
         // -------------------
         //     SEND EMBED
@@ -63,8 +63,8 @@ module.exports =
 
         await interaction.reply({
             content: mention,
-            embeds: [social],
-            components: rows,
+            embeds: [socialEmbed],
+            components: components,
             ephemeral: false
         });
     }

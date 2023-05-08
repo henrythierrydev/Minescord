@@ -33,7 +33,7 @@ module.exports =
         
         if(!interaction.member.permissions.has(PermissionFlagsBits.Administrator)) 
         {
-            permission = new EmbedBuilder()
+            const permissionEmbed = new EmbedBuilder()
                 .setTitle(lang.universal.permission.title)
                 .setDescription(lang.universal.permission.description)
                 .setColor(lang.universal.permission.color)
@@ -41,7 +41,7 @@ module.exports =
             
                 return interaction.reply({
                     content: mention,
-                    embeds: [permission],
+                    embeds: [permissionEmbed],
                     ephemeral: true
                 }
             );
@@ -53,7 +53,7 @@ module.exports =
 
         if(existingPermissions && existingPermissions.allow.has(PermissionFlagsBits.SendMessages))
         {
-            error = new EmbedBuilder()
+            const errorEmbed = new EmbedBuilder()
                 .setTitle(lang.unlock.embed.error.title)
                 .setDescription(lang.unlock.embed.error.description)
                 .setColor(lang.unlock.embed.error.color)
@@ -61,7 +61,7 @@ module.exports =
 
             return interaction.reply({
                 content: mention,
-                embeds: [error],
+                embeds: [errorEmbed],
                 ephemeral: true
             });
         }
@@ -72,7 +72,7 @@ module.exports =
         
         channel.permissionOverwrites.edit(channel.guild.roles.everyone, { SendMessages: true });
 
-        sucess = new EmbedBuilder()
+        const sucessEmbed = new EmbedBuilder()
             .setTitle(lang.unlock.embed.sucess.title)
             .setDescription(lang.unlock.embed.sucess.description.replace('{author}', author))
             .setColor(lang.unlock.embed.sucess.color)
@@ -84,7 +84,7 @@ module.exports =
 
         return interaction.reply({
             content: mention,
-            embeds: [sucess],
+            embeds: [sucessEmbed],
             ephemeral: false
         });
     },

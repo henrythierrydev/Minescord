@@ -35,7 +35,7 @@ module.exports =
         
         if(!interaction.member.permissions.has(PermissionFlagsBits.Administrator)) 
         {
-            permission = new EmbedBuilder()
+            const permissionEmbed = new EmbedBuilder()
                 .setTitle(lang.universal.permission.title)
                 .setDescription(lang.universal.permission.description)
                 .setColor(lang.universal.permission.color)
@@ -43,7 +43,7 @@ module.exports =
             
                 return interaction.reply({
                     content: mention,
-                    embeds: [permission],
+                    embeds: [permissionEmbed],
                     ephemeral: true
                 }
             );
@@ -55,7 +55,7 @@ module.exports =
 
         if(value < 1 || value > 100) 
         {    
-            error = new EmbedBuilder()
+            const errorEmbed = new EmbedBuilder()
                 .setTitle(lang.clear.embed.error.title)
                 .setDescription(lang.clear.embed.error.description)
                 .setColor(lang.clear.embed.error.color)
@@ -63,7 +63,7 @@ module.exports =
                 
                 return interaction.reply({
                     content: mention,
-                    embeds: [error],
+                    embeds: [errorEmbed],
                     ephemeral: true
                 }
             );
@@ -71,11 +71,11 @@ module.exports =
 
         // -------------------
         //    SUCESS CLEAR
-        // -------------------        
+        // -------------------
         
         await interaction.channel.bulkDelete(value, true);
         
-        sucess = new EmbedBuilder()
+        const sucessEmbed = new EmbedBuilder()
             .setTitle(lang.clear.embed.sucess.title)
             .setDescription(lang.clear.embed.sucess.description.replace('{value}', value).replace('{author}', author))
             .setColor(lang.clear.embed.sucess.color)
@@ -87,7 +87,7 @@ module.exports =
 
         return interaction.reply({
             content: mention,
-            embeds: [sucess],
+            embeds: [sucessEmbed],
             ephemeral: false
         });
     },

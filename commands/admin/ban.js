@@ -48,7 +48,7 @@ module.exports =
         
         if(!interaction.member.permissions.has(PermissionFlagsBits.Administrator)) 
         {
-            const permission = new EmbedBuilder()
+            const permissionEmbed = new EmbedBuilder()
                 .setTitle(lang.universal.permission.title)
                 .setDescription(lang.universal.permission.description)
                 .setColor(lang.universal.permission.color)
@@ -56,7 +56,7 @@ module.exports =
             
             return interaction.reply({
                 content: mention,
-                embeds: [permission],
+                embeds: [permissionEmbed],
                 ephemeral: true
             });
         }
@@ -67,7 +67,7 @@ module.exports =
 
         if(reason.length < 10 || reason.length > 100) 
         {    
-            const error = new EmbedBuilder()
+            const reasonErrorEmbed = new EmbedBuilder()
                 .setTitle(lang.ban.embed.error.reason.title)
                 .setDescription(lang.ban.embed.error.reason.description)
                 .setColor(lang.ban.embed.error.reason.color)
@@ -75,7 +75,7 @@ module.exports =
                 
                 return interaction.reply({
                     content: mention,
-                    embeds: [error],
+                    embeds: [reasonErrorEmbed],
                     ephemeral: true
                 }
             );
@@ -87,7 +87,7 @@ module.exports =
 
         if(hasadmin || user.id === ownerId) 
         {
-            const admin = new EmbedBuilder()
+            const errorAdminEmbed = new EmbedBuilder()
                 .setTitle(lang.ban.embed.error.admin.title)
                 .setDescription(lang.ban.embed.error.admin.description)
                 .setColor(lang.ban.embed.error.admin.color)
@@ -95,7 +95,7 @@ module.exports =
                 
                 return interaction.reply({
                     content: mention,
-                    embeds: [admin],
+                    embeds: [errorAdminEmbed],
                     ephemeral: true
                 }
             );
@@ -107,7 +107,7 @@ module.exports =
 
         if(user.bot) 
         {
-            const bot = new EmbedBuilder()
+            const errorBotEmbed = new EmbedBuilder()
                 .setTitle(lang.ban.embed.error.bot.title)
                 .setDescription(lang.ban.embed.error.bot.description)
                 .setColor(lang.ban.embed.error.bot.color)
@@ -115,7 +115,7 @@ module.exports =
                 
                 return interaction.reply({
                     content: mention,
-                    embeds: [bot],
+                    embeds: [errorBotEmbed],
                     ephemeral: true
                 }
             );
@@ -127,7 +127,7 @@ module.exports =
 
         await interaction.guild.members.ban(user, { reason });
 
-        sucess = new EmbedBuilder()
+        const sucessEmbed = new EmbedBuilder()
             .setTitle(lang.ban.embed.sucess.title)
             .setColor(lang.ban.embed.sucess.color)
             .setTimestamp()
@@ -143,7 +143,7 @@ module.exports =
 
         return interaction.reply({
             content: mention,
-            embeds: [sucess],
+            embeds: [sucessEmbed],
             ephemeral: false
         });
     },

@@ -48,7 +48,7 @@ module.exports =
         
         if(user.bot)
         {
-            const botError = new EmbedBuilder()
+            const botErrorEmbed = new EmbedBuilder()
                 .setTitle(lang.userInfo.embed.error.bot.title)
                 .setColor(lang.userInfo.embed.error.bot.color)
                 .setDescription(lang.userInfo.embed.error.bot.description)
@@ -56,7 +56,7 @@ module.exports =
                 
                 return interaction.reply({
                     content: mention,
-                    embeds: [botError],
+                    embeds: [botErrorEmbed],
                     ephemeral: true
                 }
             );
@@ -66,7 +66,7 @@ module.exports =
         //    EMBED BUILDER
         // -------------------
 
-        const embed = new EmbedBuilder()
+        const mainEmbed = new EmbedBuilder()
             .setTitle(lang.userInfo.embed.title)
             .setColor(lang.userInfo.embed.color)
         
@@ -85,7 +85,7 @@ module.exports =
         //    BUTTON BUILDER
         // -------------------
 
-        const follow = new ButtonBuilder()
+        const followButton = new ButtonBuilder()
             .setCustomId("follow")
             .setLabel(lang.userInfo.embed.button.label)
             .setStyle(ButtonStyle.Secondary)
@@ -95,12 +95,12 @@ module.exports =
         //    SEND INTERACT
         // -------------------  
 
-        const row = new ActionRowBuilder().addComponents(follow);        
+        const components = new ActionRowBuilder().addComponents(followButton);        
         
         const embedMessage = await interaction.reply({
             content: mention,
-            embeds: [embed],
-            components: [row],
+            embeds: [mainEmbed],
+            components: [components],
             ephemeral: false
         });
 
@@ -120,7 +120,7 @@ module.exports =
         
                 if(i.user.id !== interaction.user.id) 
                 {
-                    const userError = new EmbedBuilder()
+                    const userErrorEmbed = new EmbedBuilder()
                         .setTitle(lang.universal.user.title)
                         .setColor(lang.universal.user.color)
                         .setDescription(lang.universal.user.description)
@@ -128,7 +128,7 @@ module.exports =
     
                     return i.reply({
                         content: mention,
-                        embeds: [userError],
+                        embeds: [userErrorEmbed],
                         ephemeral: true,
                     });
                 }
@@ -139,7 +139,7 @@ module.exports =
         
                 if(i.user.id === userID) 
                 {
-                    const followError = new EmbedBuilder()
+                    const followErrorEmbed = new EmbedBuilder()
                         .setTitle(lang.userInfo.embed.error.follow.title)
                         .setColor(lang.userInfo.embed.error.follow.color)
                         .setDescription(lang.userInfo.embed.error.follow.description)
@@ -147,7 +147,7 @@ module.exports =
                         
                     return i.reply({
                         content: mention,
-                        embeds: [followError],
+                        embeds: [followErrorEmbed],
                         ephemeral: true,
                     });
                 }
@@ -202,7 +202,7 @@ module.exports =
                 
                 } else
                 {
-                    const followingError = new EmbedBuilder()
+                    const followingErrorEmbed = new EmbedBuilder()
                         .setTitle(lang.userInfo.embed.error.following.title)
                         .setColor(lang.userInfo.embed.error.following.color)
                         .setDescription(lang.userInfo.embed.error.following.description)
@@ -210,7 +210,7 @@ module.exports =
                         
                     return i.reply({
                         content: mention,
-                        embeds: [followingError],
+                        embeds: [followingErrorEmbed],
                         ephemeral: true,
                     });
                 }

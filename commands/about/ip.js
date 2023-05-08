@@ -32,7 +32,7 @@ module.exports =
         //    EMBED BUILDER
         // -------------------
 
-        const embed = new EmbedBuilder()
+        const mainEmbed = new EmbedBuilder()
             .setTitle(lang.ip.embed.title)
             .setColor(lang.ip.embed.color)
             .setTimestamp()
@@ -50,7 +50,7 @@ module.exports =
 
         await interaction.reply({
             content: mention,
-            embeds: [embed],
+            embeds: [mainEmbed],
             ephemeral: false
         });
     }

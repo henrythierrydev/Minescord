@@ -28,7 +28,7 @@ module.exports =
         //    EMBED BUILDER
         // -------------------
         
-        const ping = new EmbedBuilder()
+        const pingEmbed = new EmbedBuilder()
             .setTitle(lang.ping.embed.title)
             .setDescription(lang.ping.embed.description.replace('{gateway}', gateway).replace('{api}', api))
             .setColor(lang.ping.embed.color)
@@ -40,7 +40,7 @@ module.exports =
 
         await interaction.reply({
             content: mention,
-            embeds: [ping]
+            embeds: [pingEmbed]
         });
     }
 };
