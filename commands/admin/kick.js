@@ -129,13 +129,17 @@ module.exports =
 
         sucess = new EmbedBuilder()
             .setTitle(lang.kick.embed.sucess.title)
-            .setDescription(lang.kick.embed.sucess.description.replace('{author_name}', author).replace('{victim}', user).replace('{reason}', reason))
             .setColor(lang.kick.embed.sucess.color)
-            .setTimestamp();
+            .setTimestamp()
+
+            .setDescription(lang.kick.embed.sucess.description
+                .replace('{author_name}', author)
+                .replace('{victim}', user).replace('{reason}', reason)
+            );            
 
         // -------------------
         //     SEND EMBED
-        // -------------------            
+        // -------------------
 
         return interaction.reply({
             content: mention,

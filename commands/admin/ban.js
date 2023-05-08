@@ -122,16 +122,20 @@ module.exports =
         }
 
         // -------------------
-        //      KICK USER
+        //      BAN USER
         // -------------------
 
         await interaction.guild.members.ban(user, { reason });
 
         sucess = new EmbedBuilder()
             .setTitle(lang.ban.embed.sucess.title)
-            .setDescription(lang.ban.embed.sucess.description.replace('{author_name}', author).replace('{victim}', user).replace('{reason}', reason))
             .setColor(lang.ban.embed.sucess.color)
-            .setTimestamp();
+            .setTimestamp()
+
+            .setDescription(lang.ban.embed.sucess.description
+                .replace('{author_name}', author)
+                .replace('{victim}', user).replace('{reason}', reason)
+            );
 
         // -------------------
         //     SEND EMBED
