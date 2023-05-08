@@ -16,6 +16,7 @@ module.exports =
         
         .addUserOption(option => option.setName(lang.avatar.slash.option.name)
             .setDescription(lang.avatar.slash.option.description)
+            .setRequired(true)
         ),
 
     // -------------------
@@ -24,8 +25,9 @@ module.exports =
 
     async execute(interaction) 
     {
-        const user = interaction.options.getUser(lang.avatar.slash.option.name) || interaction.user;
+        const user = interaction.options.getUser(lang.avatar.slash.option.name);
         const avatar = user.displayAvatarURL({ format: 'png', size: 2048 });
+        
         const mention = interaction.user.toString();
         const name = user.username;
 
@@ -34,7 +36,7 @@ module.exports =
         // -------------------
 
         const embed = new EmbedBuilder()
-            .setTitle(lang.avatar.embed.title)
+            .setTitle(lang.avatar.embed.title.replace('{user_name}', name))
             .setDescription(lang.avatar.embed.description.replace('{user_name}', name))
             .setColor(lang.avatar.embed.color)
             .setImage(avatar)
@@ -50,14 +52,17 @@ module.exports =
             .setURL(avatar)
             .setEmoji(lang.avatar.embed.button.emoji);
 
-            const modules = new ActionRowBuilder().addComponents(download);
+        const modules = new ActionRowBuilder().addComponents(download);
             
-            await interaction.reply({
-                content: mention,
-                embeds: [embed],
-                components: [modules],
-                ephemeral: false
-            }
-        );
+        // -------------------
+        //     SEND EMBED
+        // -------------------            
+
+        await interaction.reply({
+            content: mention,
+            embeds: [embed],
+            components: [modules],
+            ephemeral: false
+        });
     }
 };
