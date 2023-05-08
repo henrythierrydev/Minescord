@@ -4,6 +4,12 @@
             "title": "Erro!",
             "description": "❎ • Oops! Parece que você não é um administrador! Infelizmente somente **Admins** podem executar esse comando. Que pena.",
             "color": "#d10b04"
+        },
+
+        "user": {
+            "title": "Impostor?",
+            "description": "🕵️‍♂️ • Andei lhe analisando e pareçe que você não é o author dessa interação... Para usar esse botão/menu execute o comando que deseja!",
+            "color": "#1ff0e5"
         }
     },
 
@@ -277,14 +283,24 @@
             "title": "Informações do usuário",
             "color": "#07ba1f",
 
-            "field1": "🔖 TAG:",
-            "field2": "👤 Nome:",
-            "field3": "#️⃣ ID:",
-            "field4": "📆 Entrou Em:",
+            "fields": {
+                "tag": "🔖 TAG:",
+                "id": "#️⃣ ID:",
+                "joined": "📆 Entrou Em:",
+                "followers": "🐦 Seguidores:"      
+            },
 
             "button": {
                 "label": "Seguir",
                 "emoji": "💎"
+            },
+
+            "sucess": {
+                "follow": {
+                    "title": "Sucesso!",
+                    "description": "🐦 • Você começou a seguir **{user_name}** com sucesso! Espero que ele seja gentil :D",
+                    "color": "#34eb74"
+                }
             },
 
             "error": {
@@ -292,6 +308,18 @@
                     "title": "Bip Bup?",
                     "description": "🛑 • Calma lá! Você está tentando ver perfis de bots? Infelizmente não é possivel, não somos humanos :(",
                     "color": "#ff0800"
+                },
+
+                "follow": {
+                    "title": "Auto Estima?",
+                    "description": "💔 • Sei que somos amigos... mas você não pode seguir a si mesmo! Tente ver perfils de outras pessoas e começar a seguir elas :D.",
+                    "color": "#f0e91f"
+                },
+
+                "following": {
+                    "title": "Entusiasta?",
+                    "description": "🐦 • Sei que é divertido... mas você não pode seguir a mesma pessoa mais de uma vez... Quem sabe um dia!",
+                    "color": "#eb4034"
                 }
             }
         }
