@@ -33,11 +33,14 @@ module.exports =
             .setDescription(lang.ping.embed.description.replace('{gateway}', gateway).replace('{api}', api))
             .setColor(lang.ping.embed.color)
             .setTimestamp();
-            
-            await interaction.reply({
-                content: mention,
-                embeds: [ping]
-            }
-        );
+
+        // -------------------
+        //     SEND EMBED
+        // -------------------
+
+        await interaction.reply({
+            content: mention,
+            embeds: [ping]
+        });
     }
 };
