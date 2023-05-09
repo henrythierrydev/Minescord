@@ -108,9 +108,9 @@ module.exports =
         if(user.bot) 
         {
             const errorBotEmbed = new EmbedBuilder()
-                .setTitle(lang.ban.embed.error.bot.title)
-                .setDescription(lang.ban.embed.error.bot.description)
-                .setColor(lang.ban.embed.error.bot.color)
+                .setTitle(lang.universal.bot.title)
+                .setDescription(lang.universal.bot.description)
+                .setColor(lang.universal.bot.color)
                 .setTimestamp();
                 
                 return interaction.reply({

@@ -56,7 +56,7 @@ module.exports =
             
         // -------------------
         //     SEND EMBED
-        // -------------------            
+        // -------------------
 
         await interaction.reply({
             content: mention,

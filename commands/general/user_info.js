@@ -48,15 +48,15 @@ module.exports =
         
         if(user.bot)
         {
-            const botErrorEmbed = new EmbedBuilder()
-                .setTitle(lang.userInfo.embed.error.bot.title)
-                .setColor(lang.userInfo.embed.error.bot.color)
-                .setDescription(lang.userInfo.embed.error.bot.description)
+            const errorBotEmbed = new EmbedBuilder()
+                .setTitle(lang.universal.bot.title)
+                .setDescription(lang.universal.bot.description)
+                .setColor(lang.universal.bot.color)
                 .setTimestamp();
                 
                 return interaction.reply({
                     content: mention,
-                    embeds: [botErrorEmbed],
+                    embeds: [errorBotEmbed],
                     ephemeral: true
                 }
             );
