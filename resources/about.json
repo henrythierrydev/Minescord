@@ -1,0 +1,18 @@
+{
+    "server": {
+        "name": "Hypixel",
+        "type": "java",
+        "ip": "play.hypixel.net",
+        "port": "25565",
+
+        "additional": {
+            "maintence": false,
+            "not_realeased": false
+        }
+    },
+
+    "website": {
+        "active": false,
+        "link": "shop.minescord.net"
+    }
+}
