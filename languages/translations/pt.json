@@ -2,7 +2,7 @@
     "universal": {
         "permission": {
             "title": "Erro!",
-            "description": "❎ • Oops! Parece que você não é um administrador! Infelizmente somente **Admins** podem executar esse comando. Que pena.",
+            "description": "⛔ • Oops! Parece que você não é um administrador! Infelizmente somente **Admins** podem executar esse comando. Que pena.",
             "color": "#d10b04"
         },
 
@@ -10,6 +10,12 @@
             "title": "Impostor?",
             "description": "🕵️‍♂️ • Andei lhe analisando e pareçe que você não é o author dessa interação... Para usar esse botão/menu execute o comando que deseja!",
             "color": "#1ff0e5"
+        },
+        
+        "bot": {
+            "title": "Bip Bup?",
+            "description": "🤖 • Você não pode usar esse commando em bots, mas você pode tentar com um ser humano, que tal?",
+            "color": "#d6113c"
         }
     },
 
@@ -97,6 +103,39 @@
         }
     },
 
+    "addRole": {
+        "slash": {
+            "name": "adicionar_cargo",
+            "description": "adicione cargos para membros do servidor",
+
+            "option": {
+                "role": {
+                    "name": "cargo",
+                    "description": "selecione um cargo"
+                },
+
+                "user": {
+                    "name": "membro",
+                    "description": "selecione um membro"
+                }
+            }
+        },
+
+        "embed": {
+            "sucess": {
+                "title": "Cargo Adicionado!",
+                "description": "✅ • O cargo **{role_name}** foi adicionado com sucesso para **{user_name}**! Espero que ele goste :D.",
+                "color": "#34eb86"
+            },
+
+            "error": {
+                "title": "Erro ao adicionar!",
+                "description": "👤 • Não foi possível adicionar o cargo pois o membro já o possui! Tente novamente mais tarde!",
+                "color": "#d63511"
+            }
+        }
+    },
+
     "ban": {
         "slash": {
             "name": "banir",
@@ -125,13 +164,7 @@
                     "title": "Big Adm?",
                     "description": "🛑 • Calma lá! Você não pode banir outro membro que também seja adminstrador do servidor! O que você está pensando?",
                     "color": "#ff0800"
-                },
-
-                "bot": {
-                    "title": "Bip Bup?",
-                    "description": "🛑 • Calma lá! Você não pode banir bots do servidor! Assim você quebra a interação entre eles, seu chato!",
-                    "color": "#ff0800"
-                }                
+                }              
             },
 
             "success": {
@@ -196,13 +229,7 @@
                     "title": "Big Adm?",
                     "description": "🛑 • Calma lá! Você não pode expulsar outro membro que também seja adminstrador do servidor! O que você está pensando?",
                     "color": "#ff0800"
-                },
-
-                "bot": {
-                    "title": "Bip Bup?",
-                    "description": "🛑 • Calma lá! Você não pode expulsar bots do servidor! Assim você quebra a interação entre eles, seu chato!",
-                    "color": "#ff0800"
-                }                
+                }             
             },
 
             "success": {
@@ -230,6 +257,39 @@
                 "title": "Erro ao Bloquear!",
                 "description": "> ⛔ • Você não pode bloquear um canal que já está bloqueado, para usar esse comando neste canal, antes dê **/unlock**!",
                 "color": "#fc3003"
+            }
+        }
+    },
+
+    "removeRole": {
+        "slash": {
+            "name": "remover_cargo",
+            "description": "remova cargos de membros do servidor",
+
+            "option": {
+                "role": {
+                    "name": "cargo",
+                    "description": "selecione um cargo"
+                },
+
+                "user": {
+                    "name": "membro",
+                    "description": "selecione um membro"
+                }
+            }
+        },
+
+        "embed": {
+            "sucess": {
+                "title": "Cargo Removido!",
+                "description": "✅ • O cargo **{role_name}** foi removido com sucesso de **{user_name}**! Espero que ele não se importe :D.",
+                "color": "#34eb86"
+            },
+
+            "error": {
+                "title": "Erro ao remover!",
+                "description": "👤 • Não foi possível remover o cargo pois o membro não o possui! Tente novamente mais tarde!",
+                "color": "#d63511"
             }
         }
     },
@@ -317,12 +377,6 @@
             },
 
             "error": {
-                "bot": {
-                    "title": "Bip Bup?",
-                    "description": "🛑 • Calma lá! Você está tentando ver perfis de bots? Infelizmente não é possivel, não somos humanos :(",
-                    "color": "#ff0800"
-                },
-
                 "follow": {
                     "title": "Auto Estima?",
                     "description": "💔 • Sei que somos amigos... mas você não pode seguir a si mesmo! Tente ver perfils de outras pessoas e começar a seguir elas :D.",

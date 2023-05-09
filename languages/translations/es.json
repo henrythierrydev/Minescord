@@ -10,7 +10,13 @@
             "title": "¿Impostor?",
             "description": "🕵️‍♂️ • Te he estado analizando y parece que no eres el autor de esta interacción... Para usar este botón/menú, ejecuta el comando que deseas.",
             "color": "#1ff0e5"
-        }
+        },
+
+        "bot": {
+            "title": "¿Bip Bup?",
+            "description": "🤖 • No puedes usar este comando en bots, pero puedes intentarlo con un ser humano, ¿qué tal?",
+            "color": "#d6113c"
+        }    
     },
     
     "avatar": {
@@ -96,7 +102,40 @@
                 }
             }
         }
-    },    
+    },
+
+    "addRole": {
+        "slash": {
+            "name": "agregar_rol",
+            "description": "agrega roles para los miembros del servidor",
+    
+            "option": {
+                "role": {
+                    "name": "rol",
+                    "description": "selecciona un rol"
+                },
+    
+                "user": {
+                    "name": "miembro",
+                    "description": "selecciona un miembro"
+                }
+            }
+        },
+    
+        "embed": {
+            "sucess": {
+                "title": "¡Rol Agregado!",
+                "description": "✅ • ¡Se ha agregado con éxito el rol **{role_name}** para **{user_name}**! Espero que le guste :D.",
+                "color": "#34eb86"
+            },
+    
+            "error": {
+                "title": "¡Error al agregar!",
+                "description": "👤 • ¡No se pudo agregar el rol porque el miembro ya lo tiene! ¡Intenta de nuevo más tarde!",
+                "color": "#d63511"
+            }
+        }
+    },        
 
     "ban": {
         "slash": {
@@ -126,13 +165,7 @@
                     "title": "¿Gran administrador?",
                     "description": "🛑 • ¡Espera un momento! ¡No puedes banear a otro miembro que también sea administrador del servidor! ¿En qué estás pensando?",
                     "color": "#ff0800"
-                },
-    
-                "bot": {
-                    "title": "¿Bip Bup?",
-                    "description": "🛑 • ¡Espera un momento! ¡No puedes banear a los bots del servidor! ¡Así rompes la interacción entre ellos, qué pesado!",
-                    "color": "#ff0800"
-                }                
+                }           
             },
     
             "success": {
@@ -169,7 +202,6 @@
         }
     },
     
-
     "kick": {
         "slash": {
             "name": "expulsar",
@@ -198,13 +230,7 @@
                     "title": "¿Gran administrador?",
                     "description": "🛑 • ¡Espera! ¡No puedes expulsar a otro miembro que también sea administrador del servidor! ¿Qué estás pensando?",
                     "color": "#ff0800"
-                },
-    
-                "bot": {
-                    "title": "¿Bip Bup?",
-                    "description": "🛑 • ¡Espera! ¡No puedes expulsar bots del servidor! ¡Así rompes la interacción entre ellos, qué molesto!",
-                    "color": "#ff0800"
-                }                
+                }              
             },
     
             "success": {
@@ -232,6 +258,39 @@
                 "title": "¡Error al Bloquear!",
                 "description": "> ⛔ • No puedes bloquear un canal que ya está bloqueado, ¡para usar este comando en este canal, primero da **/unlock**!",
                 "color": "#fc3003"
+            }
+        }
+    },
+
+    "removeRole": {
+        "slash": {
+            "name": "remover_rol",
+            "description": "remueve roles de los miembros del servidor",
+    
+            "option": {
+                "role": {
+                    "name": "rol",
+                    "description": "selecciona un rol"
+                },
+    
+                "user": {
+                    "name": "miembro",
+                    "description": "selecciona un miembro"
+                }
+            }
+        },
+    
+        "embed": {
+            "sucess": {
+                "title": "¡Rol eliminado!",
+                "description": "✅ • ¡Se ha eliminado con éxito el rol **{role_name}** de **{user_name}**! Espero que no le importe :D.",
+                "color": "#34eb86"
+            },
+    
+            "error": {
+                "title": "¡Error al eliminar!",
+                "description": "👤 • ¡No se pudo eliminar el rol porque el miembro no lo tiene! ¡Intenta de nuevo más tarde!",
+                "color": "#d63511"
             }
         }
     },
@@ -299,7 +358,7 @@
             "color": "#07ba1f",
     
             "fields": {
-                "tag": "🔖 ETIQUETA:",
+                "tag": "🔖 TAG:",
                 "id": "#️⃣ ID:",
                 "joined": "📆 Se unió el:",
                 "followers": "🐦 Seguidores:"      
@@ -318,13 +377,7 @@
                 }
             },
     
-            "error": {
-                "bot": {
-                    "title": "¿Bip Bup?",
-                    "description": "🛑 • ¡Espera un momento! ¿Estás intentando ver perfiles de bots? Desafortunadamente, no es posible, ¡no somos humanos! :(",
-                    "color": "#ff0800"
-                },
-    
+            "error": {    
                 "follow": {
                     "title": "¿Autoestima?",
                     "description": "💔 • Sé que somos amigos, ¡pero no puedes seguirte a ti mismo! Intenta ver perfiles de otras personas y comenzar a seguirlos :D.",
@@ -338,5 +391,5 @@
                 }
             }
         }
-    }    
+    }
 }
