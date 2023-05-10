@@ -1,1 +1,3 @@
-* linguist-detectable=true
+docs/* linguist-detectable=true
+docs/*.html linguist-language=HTML
+docs/*.css linguist-language=CSS
