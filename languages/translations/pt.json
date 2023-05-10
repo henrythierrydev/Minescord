@@ -1,0 +1,363 @@
+{
+    "universal": {
+        "embeds": {
+            "permission": {
+                "title": "Erro!",
+                "description": "⛔ • Oops! Parece que você não é um administrador! Infelizmente somente **Admins** podem executar esse comando. Que pena."
+            },
+    
+            "user": {
+                "title": "Impostor?",
+                "description": "🕵️‍♂️ • Andei lhe analisando e pareçe que você não é o author dessa interação... Para usar esse botão/menu execute o comando que deseja!"
+            },
+            
+            "bot": {
+                "title": "Bip Bup?",
+                "description": "🤖 • Você não pode usar esse commando em bots, mas você pode tentar com um ser humano, que tal?"
+            },
+            
+            "broken": {
+                "title": "Erro crítico!",
+                "description": "> 🔴 • Houve um erro interno ao executar este comando, contate o administrador do servidor para corrigir!"
+            }
+        },
+
+        "slash": {
+            "user": {
+                "name": "membro",
+                "description": "selecione um membro do servidor"
+            },
+
+            "role": {
+                "name": "cargo",
+                "description": "selecione um cargo do servidor"
+            },
+
+            "string": {
+                "name": "motivo",
+                "description": "adicione um texto explicando os motivos."
+            },
+
+            "int": {
+                "name": "valor",
+                "description": "adicione um valor inteiro"
+            }
+        }
+    },
+
+    "avatar": {
+        "slash": {
+            "name": "avatar",
+            "description": "veja e baixe o seu avatar ou de outros membros"
+        },
+
+        "embed": {
+            "title": "Avatar de {user_name}",
+            "description": "🖼 • Aqui está o avatar do usuário **{user_name}**, lindo, não? Também adorei :D.\n\n 🔗 • Para baixar o avatar para você basta clicar no botão de download abaixo!",
+
+            "button": {
+                "label": "Baixar",
+                "emoji": "🔗"
+            }
+        }
+    },
+
+    "ip": {
+        "slash": {
+            "name": "ip",
+            "description": "veja o ip do servidor e venha jogar conosco!"
+        },
+
+        "embed": {
+            "title": "IP do servidor",
+            "description": "> 👋 • Olá **{user_name}** venha jogar conosco no {server_name} e se divertir ainda mais, copie e insira o IP abaixo para entrar no servidor!\n\n```IP: {server_ip}\nPorta: {server_port}```\n> Bom jogo!"
+        }
+    },
+
+    "playerHead": {
+        "slash": {
+            "name": "player_head",
+            "description": "veja cabeças de jogadores com contas na Mojang",
+
+            "option": {
+                "name": "nick",
+                "description": "insira um nick de um jogador"
+            }
+        },
+
+        "embed": {
+            "notfound": {
+                "title": "Jogador Não econtrado!",
+                "description": "> 🤔 • O jogador **{player_name}** não pode ser encontrado! Talvez porque ele não tem uma conta oficial registrada na mojang!"
+            },
+
+            "showhead": {
+                "title": "Head de {player_name}",
+                "description": "> 👑 • Esta é a atual head do jogador! **Lembre-se** a head não faz parte de toda a skin do player, essa é somente um preview dela!\n\n> No final das contas, deve ser um grande player!"
+            }
+        }
+    },
+
+    "socials": {
+        "slash": {
+            "name": "redes",
+            "description": "veja as redes sociais do servidor e nos acompanhe"
+        },
+
+        "embed": {
+            "inactive": {
+                "title": "Que pena!",
+                "description": "> 💔 • O servidor ainda não possui nenhuma rede social! Tente novamente mais tarde."
+            },
+
+            "social": {
+                "title": "Redes Sociais",
+                "description": "> 🖼 • Não fique por fora das novidades do servidor! Acompanhe nossas redes sociais e esteja sempre por dentro das atualizações diárias/semanais.\n\n> 🔗 • Clique na rede social que você mais gosta e comece a seguir nosso perfil agora mesmo! Assim você não perde nenhuma das novidades que estamos preparando para você.\n\n> 👨‍👩‍👧‍👦 • E não se esqueça de compartilhar nossas páginas com seus amigos! Assim, você ajuda a nossa comunidade a crescer e a chegar a cada vez mais pessoas. Juntos, podemos fazer do nosso servidor um lugar ainda mais incrível!"      
+            }
+        }
+    },
+
+    "status": {
+        "slash": {
+            "name": "status",
+            "description": "veja o status atual do servidor"
+        },
+
+        "embed": {
+            "status": {
+                "title": "Status do servidor:",
+                "description": "```Status: {online_check}\nPlayers: {current_players}/{max_players}```\n> 🟢 • Status em tempo real para o servidor: **{server_name}**"
+            },
+
+            "notfound": {
+                "title": "Erro de Status!",
+                "description": "> 🛑 • Oops! Pareçe que não foi possível encontrar nenhum servidor com esse **IP/porta**, contate o administrador do servidor para fazer uma correção! [404]"
+            },
+
+            "maintence": {
+                "title": "Servidor em manutenção!",
+                "description": "> 🧰 • Oops! O servidor atualmente está em manutenção, estaremos de volta em breve! Obrigado pela sua compreensão."
+            },            
+
+            "nrealeased": {
+                "title": "Servidor Offline!",
+                "description": "> 🏠 • Oops! O servidor atualmente está em construção, em breve ele será lançado! Obrigado pela sua compreensão."                     
+            }
+        }
+    },
+
+    "addRole": {
+        "slash": {
+            "name": "adicionar_cargo",
+            "description": "adicione cargos para membros do servidor"
+        },
+
+        "embed": {
+            "roleadd": {
+                "title": "Cargo Adicionado!",
+                "description": "✅ • O cargo **{role_name}** foi adicionado com sucesso para **{user_name}**! Espero que ele goste :D."
+            },
+
+            "rolealready": {
+                "title": "Erro ao adicionar!",
+                "description": "👤 • Não foi possível adicionar o cargo pois o membro já o possui! Tente novamente mais tarde!"
+            },
+
+            "roleperms": {
+                "title": "Eu no topo?",
+                "description": "👤 • Não foi possível adicionar o cargo pois meu cargo não é alto o suficiente para isso! Tente novamente mais tarde!"
+            }            
+        }
+    },
+
+    "ban": {
+        "slash": {
+            "name": "banir",
+            "description": "banir um usuário chato do seu servidor"
+        },
+
+        "embed": {
+            "reason": {
+                "title": "Erro!",
+                "description": "🛑 • Calma lá! Antes de banir o usuário defina um motivo do banimento entre 10 a 100 caracteres para que assim possamos tornar isso ainda melhor :D."
+            },
+            
+            "admin": {
+                "title": "Big Adm?",
+                "description": "🛑 • Calma lá! Você não pode banir outro membro que também seja adminstrador do servidor! O que você está pensando?"
+            },
+
+            "banned": {
+                "title": "Sucesso!",
+                "description": "> ✅ • O usuário **{victim}** foi banido do servidor com successo por **{author_name}**, Ninguém mandou violar as regras seu boboca!\n\n> 📑 • Motivo: {reason}."
+            }
+        }
+    },
+
+    "clear": {
+        "slash": {
+            "name": "limpar",
+            "description": "limpar mensagens de chats do servidor."
+        },
+
+        "embed": {
+            "value": {
+                "title": "Erro ao limpar!",
+                "description": "🗑 • Calma lá! Você só pode limpar de **1 a 100** mensagens no chat por vez. Seu apressadinho!"
+            },
+
+            "cleaned": {
+                "title": "Sucesso!",
+                "description": "✅ • o caminhão da faxina passou e foram limpas **{value}** mensagens do chat por **{author}**! Espero que esteja mais limpo agora."
+            }
+        }
+    },
+
+    "kick": {
+        "slash": {
+            "name": "expulsar",
+            "description": "expulsar um usuário chato do seu servidor"
+        },
+
+        "embed": {
+            "reason": {
+                "title": "Erro!",
+                "description": "🛑 • Calma lá! Antes de expulsar o usuário defina um motivo da expulsão entre 10 a 100 caracteres para que assim possamos tornar isso ainda melhor :D."
+            },
+            
+            "admin": {
+                "title": "Big Adm?",
+                "description": "🛑 • Calma lá! Você não pode expulsar outro membro que também seja adminstrador do servidor! O que você está pensando?"
+            },
+
+            "kicked": {
+                "title": "Sucesso!",
+                "description": "> ✅ • O usuário **{victim}** foi expulso do servidor com successo por **{author_name}**, Ninguém mandou violar as regras seu boboca!\n\n> 📑 • Motivo: {reason}."
+            }
+        }
+    },
+
+    "lock": {
+        "slash": {
+            "name": "lock",
+            "description": "evite que usuários mandem mensagem bloqueando o canal!"
+        },
+        
+        "embed": {
+            "locked": {
+                "title": "Canal Bloqueado!",
+                "description": "> 🔒 • O canal foi bloqueado com successo por **{author}**, agora nenhum membros com permissões padrões podem enviar mensagens nesse canal! Para desbloquear use **/unlock**!"
+            },
+
+            "alreadylocked": {
+                "title": "Erro ao Bloquear!",
+                "description": "> ⛔ • Você não pode bloquear um canal que já está bloqueado, para usar esse comando neste canal, antes dê **/unlock**!"
+            }
+        }
+    },
+
+    "removeRole": {
+        "slash": {
+            "name": "remover_cargo",
+            "description": "remova cargos de membros do servidor"
+        },
+
+        "embed": {
+            "roleremove": {
+                "title": "Cargo Removido!",
+                "description": "✅ • O cargo **{role_name}** foi removido com sucesso de **{user_name}**! Espero que ele não se importe! :D."
+            },
+
+            "nrole": {
+                "title": "Erro ao remover!",
+                "description": "👤 • Não foi possível remover o cargo pois o membro não o possui! Tente novamente mais tarde!"
+            },
+
+            "roleperms": {
+                "title": "Eu no topo?",
+                "description": "👤 • Não foi possível remover o cargo pois meu cargo não é alto o suficiente para isso! Tente novamente mais tarde!"
+            }            
+        }
+    },
+
+    "unlock": {
+        "slash": {
+            "name": "unlock",
+            "description": "desbloqueei canais que usuários possam interagir!"
+        },
+        
+        "embed": {
+            "unlocked": {
+                "title": "Canal Desbloqueado!",
+                "description": "> 🔓 • O canal foi desbloqueado com successo por **{author}**, agora todos os membros podem enviar mensagens nesse canal novamente! Para bloquear use **/lock**!"
+            },
+
+            "alreadyunlocked": {
+                "title": "Erro ao Desbloquear!",
+                "description": "> ⛔ • Você não pode desbloquear um canal que já está desbloqueado, para usar esse comando neste canal, antes dê **/lock**!"
+            }
+        }
+    },
+
+    "ping": {
+        "slash": {
+            "name": "ping",
+            "description": "veja o ping do bot e o ping do servidor"
+        },
+
+        "embed": {
+            "title": "Ping?",
+            "description": "> Então, pediram por ping? 🏓 • Pong!\n\n```1. API: {api} ms\n\n2. Gateway: {gateway} ms```"
+        }
+    },
+
+    "serverInfo": {
+        "slash": {
+            "name": "server_info",
+            "description": "informações gerais sobre o servidor"
+        },
+
+        "embed": {
+            "title": "Informações do servidor:",
+            "description": "> 🌐 • Aqui estão as informações sobre o servidor em tempo real:\n\n```👑 Dono: {owner_id}\n👥 Membros totais: {member_count}\n📕 Cargos totais: {role_count}\n💻 Bots totais: {bot_count}\n📟 Canais totais: {channel_count}```\n> No final das contas... É um belo servidor!"
+        }
+    },
+
+    "userInfo": {
+        "slash": {
+            "name": "user_info",
+            "description": "veja informações de usuários do servidor"
+        },
+        
+        "embed": {
+            "title": "Informações do usuário",
+
+            "fields": {
+                "tag": "🔖 TAG:",
+                "id": "#️⃣ ID:",
+                "joined": "📆 Entrou Em:",
+                "followers": "🐦 Seguidores:"      
+            },
+
+            "button": {
+                "label": "Seguir",
+                "emoji": "💎"
+            },
+
+            "successfollow": {
+                "title": "Sucesso!",
+                "description": "🐦 • Você começou a seguir **{user_name}** com successo! Espero que ele seja gentil :D"
+            },
+
+            "yourself": {
+                "title": "Auto Estima?",
+                "description": "💔 • Sei que somos amigos... mas você não pode seguir a si mesmo! Tente ver perfils de outras pessoas e começar a seguir elas :D."
+            },
+
+            "alreadyfollowing": {
+                "title": "Entusiasta?",
+                "description": "🐦 • Sei que é divertido... mas você não pode seguir a mesma pessoa mais de uma vez... Quem sabe um dia!"
+            }
+        }
+    }
+}
