@@ -1,0 +1,38 @@
+@import url(../default.css);
+@import url(../Components/pallette.css);
+
+.main {
+    color: var(--primary-text-color);
+    padding: 3em 5em;
+    background-color: var(--primary-background-color);
+}
+
+.topics-header h1 {
+    font-size: 100px;
+    font-family: 'Panton';
+    text-transform: uppercase;
+    text-shadow: 0px 5px #555;
+}
+
+.cards {
+    margin: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+}
+
+.card-item {
+    margin-top: 2em;
+    background-color: #2B2B2B;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px #5ba75b;
+    border: 2px solid #5ba75b;
+}
+
+.card-body {
+    padding: 20px;
+}
