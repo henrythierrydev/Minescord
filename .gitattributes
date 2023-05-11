@@ -1,3 +1,5 @@
+commands/* linguist-detectable=true
+databse/* linguist-detectable=true
 docs/* linguist-detectable=true
-docs/*.html linguist-language=HTML
-docs/*.css linguist-language=CSS
+languages/* linguist-detectable=true
+resources/* linguist-detectable=true
