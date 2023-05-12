@@ -1,0 +1,20 @@
+{
+    "redirects": [    
+    {
+        "source": "/docs/langs/en.html",
+        "destination": "/en",
+        "statusCode": 301
+    },
+
+    {
+        "source": "/docs/langs/es.html",
+        "destination": "/es",
+        "statusCode": 301
+    },
+
+    {
+        "source": "/docs/langs/pt.html",
+        "destination": "/pt",
+        "statusCode": 301
+    }]
+}
