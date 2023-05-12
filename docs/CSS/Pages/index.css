@@ -295,12 +295,9 @@
 
 @media screen and (min-width: 700px) and (max-width: 999px) {
     .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
     }
       
-
     .card-item {
         min-width: 300px;
         max-width: 300px;
