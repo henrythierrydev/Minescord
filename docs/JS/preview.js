@@ -1,7 +1,7 @@
 const languageMap = {
-    'en': '../docs/langs/en.html',
-    'es': '../docs/langs/es.html',
-    'pt': '../docs/langs/pt.html',
+    'en': '../langs/en.html',
+    'es': '../langs/es.html',
+    'pt': '../langs/pt.html',
 };
   
 function redirectToLanguage() {
