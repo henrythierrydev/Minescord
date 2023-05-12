@@ -269,6 +269,7 @@
 
     .github-box a {
         max-height: 70px;
+        font-size: 14px;
     }
 
     @media screen and (min-width: 375px) {
