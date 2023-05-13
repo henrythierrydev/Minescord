@@ -6,3 +6,24 @@
 
 --- 
 
+# ✅ • Getting Started
+
+> As said before, this bot is here to be the best Minecraft Discord Servers bot, so we built an expansive and intuitive wiki for users, explaining about the ways of use, configuration, command creation and more, that can be used by inexperienced users to experts! All translated into the 3 most used languages, enjoy.
+
+> Acess the wiki: **https://minescord.vercel.app/**
+
+---
+
+# ⭐ • Features
+
+```
+• +20 commands!
+• Multilingual bot!
+• Prevention of execution errors.
+• Commands created especially for Minecraft server owners.
+• Only slash commands support.
+• Intuitive settings and panels!
+• Intuitive messages and errors.
+```
+
+---
