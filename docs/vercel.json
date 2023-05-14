@@ -1,9 +1,3 @@
 {
-    "cleanUrls": true,
-
-    "routes": [
-        { "src": "/langs/en", "dest": "/home" },
-        { "src": "/langs/es", "dest": "/home" },
-        { "src": "/langs/pt", "dest": "/home" }
-    ]
+    "cleanUrls": true
 }
