@@ -1,0 +1,9 @@
+{
+    "cleanUrls": true,
+
+    "redirects": [
+        { "source": "/langs/en", "destination": "/home", "statusCode": 301 },
+        { "source": "/langs/es", "destination": "/home", "statusCode": 301 },
+        { "source": "/langs/pt", "destination": "/home", "statusCode": 301 }
+    ]
+}

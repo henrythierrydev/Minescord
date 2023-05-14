@@ -1,0 +1,23 @@
+{
+    "status": "online",
+
+    "presences": [
+        { 
+            "type": "Playing", 
+            "description": "play.minescord.net" ,
+            "interval": 5000
+        },
+
+        { 
+            "type": "Watching", 
+            "description": "Minecraft Java", 
+            "interval": 5000
+        },
+
+        {
+            "type": "Listening",
+            "description": "Minecraft Spotify",
+            "interval": 5000
+        }
+    ]
+}
