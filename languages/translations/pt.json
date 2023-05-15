@@ -111,16 +111,6 @@
             "notfound": {
                 "title": "Erro de Status!",
                 "description": "> 🛑 • Oops! Pareçe que não foi possível encontrar nenhum servidor com esse **IP/porta**, contate o administrador do servidor para fazer uma correção! [404]"
-            },
-
-            "maintence": {
-                "title": "Servidor em manutenção!",
-                "description": "> 🧰 • Oops! O servidor atualmente está em manutenção, estaremos de volta em breve! Obrigado pela sua compreensão."
-            },            
-
-            "nrealeased": {
-                "title": "Servidor Offline!",
-                "description": "> 🏠 • Oops! O servidor atualmente está em construção, em breve ele será lançado! Obrigado pela sua compreensão."                     
             }
         }
     },
@@ -140,6 +130,56 @@
             "rolealready": {
                 "title": "Erro ao adicionar!",
                 "description": "👤 • Não foi possível adicionar o cargo pois o membro já o possui ou você não tem permissões suficientes! Tente novamente mais tarde!"
+            }
+        }
+    },
+
+    "announcement": {
+        "slash": {
+            "name": "anunciar",
+            "description": "「Admin」fazer um anúncio para todo o servidor",
+
+            "option": {
+                "channel": {
+                    "name": "canal",
+                    "description": "selecione um canal de texto"
+                },
+
+                "mention": {
+                    "name": "menção",
+                    "description": "cargo a ser mencionado (apenas @)"
+                }
+            }
+        },
+
+        "modal": {
+            "main_title": "Anunciar",
+
+            "title": {
+                "label": "Título",
+                "placeholder": "Insira um titulo entre 10 a 100 caracteres"
+            },
+
+            "description": {
+                "label": "Descrição",
+                "placeholder": "Insira uma descrição entre 20 a 500 caracteres"
+            },
+
+            "banner": {
+                "label": "Banner",
+                "placeholder": "Insira um banner (apenas links são válidos)"                    
+            }
+        },        
+
+        "embed": {
+            "link": {
+                "title": "Erro ao anunciar!",
+                "description": "📑 • O link que você inseriu não existe ou não é um link válido! Tente novamente mais tarde!"                
+            },
+
+            "send": {
+                "title": "Sucesso!",
+                "description": "📢 • O anuncio foi enviado com sucesso para o canal {announcement_channel}. Espero que tenha sido um anúncio legal!"
             }
         }
     },
@@ -444,14 +484,13 @@
 
         "embed": {
             "title": "Avatar de {user_name}",
-            "description": "🖼 • Aqui está o avatar do usuário **{user_name}**, lindo, não? Também adorei :D.\n\n 🔗 • Para baixar o avatar para você basta clicar no botão de download abaixo!",
 
             "button": {
                 "label": "Baixar",
                 "emoji": "🔗"
             }
         }
-    },      
+    },
 
     "ping": {
         "slash": {
@@ -482,36 +521,10 @@
             "name": "user_info",
             "description": "「Geral」veja informações de usuários do servidor"
         },
-        
+
         "embed": {
-            "title": "Informações do usuário",
-
-            "fields": {
-                "tag": "🔖 TAG:",
-                "id": "#️⃣ ID:",
-                "joined": "📆 Entrou Em:",
-                "followers": "🐦 Seguidores:"      
-            },
-
-            "button": {
-                "label": "Seguir",
-                "emoji": "💎"
-            },
-
-            "successfollow": {
-                "title": "Sucesso!",
-                "description": "🐦 • Você começou a seguir **{user_name}** com successo! Espero que ele seja gentil :D"
-            },
-
-            "yourself": {
-                "title": "Auto Estima?",
-                "description": "💔 • Sei que somos amigos... mas você não pode seguir a si mesmo! Tente ver perfils de outras pessoas e começar a seguir elas :D."
-            },
-
-            "alreadyfollowing": {
-                "title": "Entusiasta?",
-                "description": "🐦 • Sei que é divertido... mas você não pode seguir a mesma pessoa mais de uma vez... Quem sabe um dia!"
-            }
+            "title": "Perfil de {user_name}",
+            "description": "> Informações gerais sobre o usuário:\n\n```📑 ID: {user_id}\n💻 BOT: {is_bot}\n📫 TAG: {user_tag}\n📅 Conta criada em: {account_created}```\n> No final das contas, acho que é um bom usuário!"
         }
     }
 }
