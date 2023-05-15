@@ -1,0 +1,65 @@
+{
+    "about": {
+        "server_name": "Hypixel",
+        "server_type": "java",
+        "server_adress": "play.hypixel.net",
+        "server_port": "25565"
+    },
+
+    "tags": {
+        "1": "[Member]",
+        "2": "[Builder]",
+        "3": "[Booster]",
+        "4": "[VIP]",
+        "5": "[MVP]",
+        "6": "[Admin]"
+    },
+
+    "commands": {
+        "ip": true,
+        "socials": true,
+        "status": true,
+        "add_role": true,
+        "ban": true,
+        "clear": true,
+        "kick": true,
+        "lock": true,
+        "remove_role": true,
+        "unlock": true,
+        "coinflip": true,
+        "player_head": true,
+        "player_skin": true,
+        "curiosities": true,
+        "say": true,
+        "avatar": true,
+        "ping": true,
+        "server_info": true,
+        "user_info": true
+    },
+
+    "socials": {
+        "youtube": {
+            "active": true,
+            "link": "https://youtube.com/",
+            "emoji": "📺"
+        },
+
+        "instagram": {
+            "active": true,
+            "link": "https://instragram.com/",
+            "emoji": "📸"
+        },
+
+        "twitter" : {
+            "active": true,
+            "link": "https://twitter.com/",
+            "emoji": "🐦"
+        },
+
+        "website": {
+            "active": true,
+            "link": "https://minescord.com/",
+            "emoji": "🛒"
+        }
+    }
+}
