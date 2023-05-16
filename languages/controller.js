@@ -1,11 +1,11 @@
 const config = require("../config.json");
-let lang = config.lang || "en";
+let lang = config.lang;
 
 // -------------------
 //   SUPPORTED LANGS
 // -------------------
 
-const languages = ["pt", "es"];
+const languages = ["en", "es", "pt"];
 
 // -------------------
 //   LANG NOT FOUND
@@ -33,7 +33,7 @@ const commandLang = languages.reduce((acc, language) =>
 }, {});
 
 // -------------------
-//    RETURN LANG
+//     RETURN LANG
 // -------------------
 
 function getTranslation() {

@@ -21,8 +21,7 @@ for(const folder of commandFolders)
     {
         const command = require(`./commands/${folder}/${file}`);
 
-        if(command.data instanceof SlashCommandBuilder) 
-        {
+        if(command.data instanceof SlashCommandBuilder) {
             client.commands.set(command.data.name, command);
         }
     }
@@ -32,7 +31,7 @@ for(const folder of commandFolders)
 //      BOT LOAD
 // -------------------
 
-client.on('ready', async () => {
+client.once('ready', async () => {
     const commandData = client.commands.map(command => command.data.toJSON());
     await client.application.commands.set(commandData);
 
@@ -50,10 +49,7 @@ client.on('ready', async () => {
 client.on('interactionCreate', async interaction => 
 {
     if(!interaction.isCommand()) return;
-
-    if(!interaction.guild) {
-        return interaction.reply('Este bot não suporta comandos em mensagem direta.');
-    }
+    if(!interaction.guild) return;
 
     const command = client.commands.get(interaction.commandName);
 

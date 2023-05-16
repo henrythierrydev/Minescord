@@ -187,7 +187,8 @@ module.exports =
                             PermissionFlagsBits.AddReactions,
                             PermissionFlagsBits.SendMessages,
                             PermissionFlagsBits.AttachFiles,
-                            PermissionFlagsBits.EmbedLinks
+                            PermissionFlagsBits.EmbedLinks,
+                            PermissionFlagsBits.UseApplicationCommands
                         ]
                     }]
 
@@ -286,6 +287,7 @@ module.exports =
                 }
                 
                 ).catch(e => console.error(e));
+
                 
                 // -------------------
                 //    ADD TO DATA

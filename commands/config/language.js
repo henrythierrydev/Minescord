@@ -4,10 +4,10 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { getTranslation } = require('../../languages/controller');
 const lang = getTranslation(); 
 
-const path = require('path');
-const configPath = path.resolve(__dirname, '../../resources/config.json');
-const config = require(configPath);
 const fs = require('fs');
+const path = require('path');
+const dataPath = path.resolve(__dirname, '../../config.json');
+const data = require(dataPath);
 
 module.exports = 
 {
@@ -36,9 +36,8 @@ module.exports =
         const mainEmbed = new EmbedBuilder()
             .setTitle("Bot language")
             .setDescription("> 👋 • Hello **" + name + "**! Welcome to lang panel!\n\n> 🌎 • Default bot language is English, but you can change the bot's commands to your preferred language. Choose from the variety of languages available in the panel below.\n\n> ⭐ • We strive to make our bot accessible to everyone by providing language options and adding more languages to the panel. Thank you for using Minescord!")
-            .setColor("Random")
-            .setTimestamp()
-            .setImage("https://cdn.wallpapersafari.com/81/10/B2Rt0U.jpg");
+            .setColor("Blue")
+            .setTimestamp();
 
         // -------------------
         //    MENU BUILDER
@@ -99,10 +98,14 @@ module.exports =
                     });
                 }
 
+                // -------------------
+                //      ENGLISH
+                // -------------------                
+
                 if(choice === 'en') 
                 {
-                    config.lang = "en";
-                    fs.writeFileSync(configPath, JSON.stringify(config));
+                    data.lang = "en";
+                    fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
 
                     const englishEmbed = new EmbedBuilder()
                         .setTitle("Success!")
@@ -117,10 +120,14 @@ module.exports =
                     });
                 }
 
+                // -------------------
+                //     PORTUGUESE
+                // -------------------                
+
                 if(choice === 'pt') 
                 {
-                    config.lang = "pt";
-                    fs.writeFileSync(configPath, JSON.stringify(config));
+                    data.lang = "pt";
+                    fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
 
                     const portugueseEmbed = new EmbedBuilder()
                         .setTitle("Sucesso!")
@@ -134,11 +141,15 @@ module.exports =
                         ephemeral: false
                     });
                 }
+
+                // -------------------
+                //      SPANISH
+                // -------------------                   
                 
                 if(choice === 'es') 
                 {
-                    config.lang = "es";
-                    fs.writeFileSync(configPath, JSON.stringify(config));
+                    data.lang = "es";
+                    fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
 
                     const spanishEmbed = new EmbedBuilder()
                         .setTitle("¡Éxito!")
