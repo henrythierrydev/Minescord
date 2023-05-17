@@ -1,0 +1,610 @@
+{
+    "universal": {
+        "embeds": {
+            "permission": {
+                "title": "¡Error!",
+                "description": "⛔ • ¡Oops! Parece que no eres un administrador. Desafortunadamente, solo los **Admins** pueden ejecutar este comando. ¡Qué lástima!"
+            },
+    
+            "user": {
+                "title": "¿Impostor?",
+                "description": "🕵️‍♂️ • Te he estado analizando y parece que no eres el autor de esta interacción... ¡Para usar este botón/menú, ejecuta el comando que deseas!"
+            },
+            
+            "bot": {
+                "title": "¿Bip Bup?",
+                "description": "🤖 • No puedes usar este comando en bots, ¿pero por qué no intentarlo con un ser humano?"
+            },
+            
+            "broken": {
+                "title": "¡Error crítico!",
+                "description": "> 🔴 • Hubo un error interno al ejecutar este comando. ¡Contacta al administrador del servidor para solucionarlo!"
+            },
+
+            "unavailable": {
+                "title": "¡Ups!",
+                "description": "> 💔 • Este comando no está disponible, ya que fue desactivado por el propietario del servidor. ¡Si lo deseas, ponte en contacto con él!"
+            },
+
+            "botperms": {
+                "title": "¿Yo en la cima?",
+                "description": "🛑 • No se pudo ejecutar este comando porque mi cargo no es lo suficientemente alto o tú no tienes los permisos necesarios. ¡Inténtalo de nuevo más tarde!"
+            },
+            
+            "adm": {
+                "title": "¿Un administrador?",
+                "description": "> 💔 • ¡Este comando solo está disponible para administradores! Inténtalo de nuevo más tarde."                
+            }
+        },
+
+        "slash": {
+            "user": {
+                "name": "miembro",
+                "description": "selecciona un miembro del servidor."
+            },
+
+            "role": {
+                "name": "rol",
+                "description": "selecciona un rol del servidor."
+            },
+
+            "string": {
+                "name": "motivo",
+                "description": "agrega un texto explicando los motivos."
+            },
+
+            "int": {
+                "name": "valor",
+                "description": "agrega un valor entero."
+            },
+
+            "channel": {
+                "name": "canal",
+                "description": "selecciona un canal."
+            },
+
+            "category": {
+                "name": "categoría",
+                "description": "selecciona una categoría."
+            }
+        }
+    },
+
+    "ip": {
+        "slash": {
+            "name": "ip",
+            "description": "「Info」¡Mira la IP del servidor y ven a jugar con nosotros!"
+        },
+
+        "embed": {
+            "title": "IP del servidor",
+            "description": "> 👋 • Hola **{user_name}**, ¡ven a jugar con nosotros en {server_name} y diviértete aún más! Copia e ingresa la siguiente IP para unirte al servidor:\n\n```IP: {server_ip}\nPuerto: {server_port}```\n> ¡Que tengas un buen juego!"
+        }
+    },
+
+    "socials": {
+        "slash": {
+            "name": "redes",
+            "description": "「Info」Mira las redes sociales del servidor y síguenos"
+        },
+
+        "embed": {
+            "inactive": {
+                "title": "¡Qué lástima!",
+                "description": "> 💔 • ¡El servidor aún no tiene ninguna red social! Inténtalo nuevamente más tarde."
+            },
+
+            "social": {
+                "title": "Redes Sociales",
+                "description": "> 🖼 • ¡No te pierdas las novedades del servidor! Sigue nuestras redes sociales y mantente al día con las actualizaciones diarias y semanales.\n\n> 🔗 • ¡Haz clic en la red social que más te guste y comienza a seguir nuestro perfil ahora mismo! Así no te perderás ninguna de las novedades que estamos preparando para ti.\n\n> 👨‍👩‍👧‍👦 • ¡Y no te olvides de compartir nuestras páginas con tus amigos! De esta manera, ayudarás a que nuestra comunidad crezca y llegue a más personas. Juntos, podemos hacer de nuestro servidor un lugar aún más increíble."
+            }
+        }
+    },
+
+    "status": {
+        "slash": {
+            "name": "status",
+            "description": "「Info」Mira el estado actual del servidor"
+        },
+        "embed": {
+            "status": {
+                "title": "Estado del servidor:",
+                "description": "```Estado: {online_check}\nJugadores: {current_players}/{max_players}```\n> 🟢 • Estado en tiempo real para el servidor: **{server_name}**"
+            },
+            "notfound": {
+                "title": "¡Error de Estado!",
+                "description": "> 🛑 • ¡Oops! Parece que no se pudo encontrar ningún servidor con esa **IP/puerto**. ¡Contacta al administrador del servidor para corregirlo! [404]"
+            }
+        }
+    },
+
+    "addRole": {
+        "slash": {
+            "name": "agregar_rol",
+            "description": "「Admin」agrega roles a los miembros del servidor"
+        },
+
+        "embed": {
+            "roleadd": {
+                "title": "¡Rol Agregado!",
+                "description": "✅ • ¡El rol **{role_name}** se ha agregado exitosamente a **{user_name}**! ¡Espero que le guste! :D"
+            },
+
+            "rolealready": {
+                "title": "Error al agregar",
+                "description": "👤 • ¡No se pudo agregar el rol porque el miembro ya lo tiene o no tienes suficientes permisos! ¡Inténtalo de nuevo más tarde!"
+            }
+        }
+    },
+
+    "announcement": {
+        "slash": {
+            "name": "anunciar",
+            "description": "「Admin」hacer un anuncio para todo el servidor",
+
+            "option": {
+                "channel": {
+                    "name": "canal",
+                    "description": "selecciona un canal de texto"
+                },
+
+                "mention": {
+                    "name": "mención",
+                    "description": "rol a mencionar (solo @)"
+                }
+            }
+        },
+
+        "modal": {
+            "main_title": "Anunciar",
+
+            "title": {
+                "label": "Título",
+                "placeholder": "Ingresa un título de 10 a 100 caracteres"
+            },
+
+            "description": {
+                "label": "Descripción",
+                "placeholder": "Ingresa una descripción de 20 a 500 caracteres"
+            },
+
+            "banner": {
+                "label": "Banner",
+                "placeholder": "Ingresa un enlace de imagen (solo se admiten enlaces)"
+            }
+        },        
+
+        "embed": {
+            "link": {
+                "title": "¡Error al anunciar!",
+                "description": "📑 • ¡El enlace que has ingresado no existe o no es un enlace válido! ¡Inténtalo de nuevo más tarde!"
+            },
+
+            "send": {
+                "title": "¡Éxito!",
+                "description": "📢 • El anuncio se ha enviado correctamente al canal {announcement_channel}. ¡Espero que haya sido un gran anuncio!"
+            }
+        }
+    },
+
+    "ban": {
+        "slash": {
+            "name": "banear",
+            "description": "「Admin」banear a un usuario molesto del servidor"
+        },
+
+        "embed": {
+            "reason": {
+                "title": "¡Error!",
+                "description": "🛑 • ¡Espera! Antes de banear al usuario, define un motivo para el baneo de entre 10 y 100 caracteres, ¡así lo haremos aún mejor! :D"
+            },
+            
+            "admin": {
+                "title": "¿Gran Admin?",
+                "description": "🛑 • ¡Espera! ¡No puedes banear a otro miembro que también sea administrador del servidor! ¿En qué estás pensando?"
+            },
+
+            "banned": {
+                "title": "¡Éxito!",
+                "description": "> ✅ • El usuario **{victim}** ha sido baneado del servidor exitosamente por **{author_name}**, ¡Nadie te dijo que violaras las reglas, tonto!\n\n> 📑 • Motivo: {reason}."
+            }
+        }
+    },
+
+    "clear": {
+        "slash": {
+            "name": "limpiar",
+            "description": "「Admin」limpiar mensajes de chats del servidor"
+        },
+
+        "embed": {
+            "value": {
+                "title": "¡Error al limpiar!",
+                "description": "🗑 • ¡Espera! Solo puedes limpiar de **1 a 100** mensajes en el chat a la vez. ¡No te apresures!"
+            },
+
+            "cleaned": {
+                "title": "¡Éxito!",
+                "description": "✅ • ¡El camión de la limpieza ha pasado y se han limpiado **{value}** mensajes del chat por **{author}**! Espero que esté más limpio ahora."
+            }
+        }
+    },
+
+    "kick": {
+        "slash": {
+            "name": "expulsar",
+            "description": "「Admin」expulsar a un usuario molesto del servidor"
+        },
+
+        "embed": {
+            "reason": {
+                "title": "¡Error!",
+                "description": "🛑 • ¡Espera! Antes de expulsar al usuario, define un motivo para la expulsión de entre 10 y 100 caracteres, ¡así lo haremos aún mejor! :D"
+            },
+            
+            "admin": {
+                "title": "¿Gran Admin?",
+                "description": "🛑 • ¡Espera! ¡No puedes expulsar a otro miembro que también sea administrador del servidor! ¿En qué estás pensando?"
+            },
+
+            "kicked": {
+                "title": "¡Éxito!",
+                "description": "> ✅ • El usuario **{victim}** ha sido expulsado del servidor exitosamente por **{author_name}**, ¡Nadie te dijo que violaras las reglas, tonto!\n\n> 📑 • Motivo: {reason}."
+            }
+        }
+    },
+
+    "lock": {
+        "slash": {
+            "name": "bloquear",
+            "description": "「Admin」evita que los usuarios envíen mensajes bloqueando el canal"
+        },
+        
+        "embed": {
+            "locked": {
+                "title": "¡Canal Bloqueado!",
+                "description": "> 🔒 • El canal ha sido bloqueado exitosamente por **{author}**, ¡ahora los miembros con permisos predeterminados no pueden enviar mensajes en este canal! Para desbloquear, usa **/unlock**."
+            },
+
+            "alreadylocked": {
+                "title": "¡Error al Bloquear!",
+                "description": "> ⛔ • No puedes bloquear un canal que ya está bloqueado. Para usar este comando en este canal, primero usa **/unlock**."
+            }
+        }
+    },
+
+    "mute": {
+        "slash": {
+            "name": "silenciar",
+            "description": "Silencia a un usuario del servidor durante un tiempo.",
+
+            "option": {
+                "number": {
+                    "name": "tiempo",
+                    "description": "Selecciona el tiempo de silenciamiento."
+                }
+            }
+        },
+
+        "embed": {
+            "muted": {
+                "title": "¡Usuario Silenciado!",
+                "description": "> 🔇 • El usuario **{user_name}** ha sido silenciado exitosamente en el servidor. ¡Nadie te dijo que violaras las reglas, tonto!"
+            },
+
+            "admin": {
+                "title": "¿Gran Admin?",
+                "description": "> 🛑 • ¡No puedes silenciar a otros usuarios que también sean administradores del servidor!"
+            }
+        }
+    },
+
+    "removeRole": {
+        "slash": {
+            "name": "remover_cargo",
+            "description": "「Admin」quita roles de los miembros del servidor"
+        },
+
+        "embed": {
+            "roleremove": {
+                "title": "¡Rol Removido!",
+                "description": "✅ • El rol **{role_name}** ha sido removido exitosamente de **{user_name}**. ¡Espero que no le importe! :D"
+            },
+
+            "nrole": {
+                "title": "¡Error al remover!",
+                "description": "👤 • No se pudo remover el rol porque el miembro no lo tiene. ¡Inténtalo de nuevo más tarde!"
+            }    
+        }
+    },
+
+    "unlock": {
+        "slash": {
+            "name": "desbloquear",
+            "description": "「Admin」desbloquea canales para que los usuarios puedan interactuar"
+        },
+        
+        "embed": {
+            "unlocked": {
+                "title": "¡Canal Desbloqueado!",
+                "description": "> 🔓 • El canal ha sido desbloqueado exitosamente por **{author}**, ¡ahora todos los miembros pueden enviar mensajes en este canal nuevamente! Para bloquearlo, usa **/lock**."
+            },
+
+            "alreadyunlocked": {
+                "title": "¡Error al Desbloquear!",
+                "description": "> ⛔ • No puedes desbloquear un canal que ya está desbloqueado. Para usar este comando en este canal, primero usa **/lock**."
+            }
+        }
+    },
+
+    "coinflip": {
+        "slash": {
+            "name": "lanzar_moneda",
+            "description": "「Diversión」lanza una moneda y descubre si sale cara o cruz."
+        },
+
+        "strings": {
+            "heads": "cara",
+            "tails": "cruz"
+        },
+
+        "embed": {
+            "title": "¡Moneda Lanzada!",
+            "description": "> 🪙 • ¡Has lanzado la moneda y esta vez salió **{result}**! ¡Espero que hayas obtenido el resultado deseado!"
+        }
+    },
+
+    "curiosities": {
+        "slash": {
+            "name": "curiosidades",
+            "description": "「Diversión」¡Curiosidades divertidas y aleatorias sobre Minecraft!"
+        },
+
+        "embed": {
+            "title": "¡Una curiosidad!",
+            "description": "¿Sabías que: {curiosity}"
+        },
+
+        "array": [
+            "El nombre original de Minecraft era 'Cave Game' antes de ser renombrado.",
+            "El Creeper de Minecraft fue creado como un error de programación durante el desarrollo del juego.",
+            "El sonido característico del Creeper de Minecraft fue grabado por el creador del juego, Markus Persson.",
+            "El bloque de hierba en Minecraft tiene el mismo sonido que una multitud en un estadio.",
+            "El código fuente original de Minecraft tenía muchos comentarios humorísticos y referencias a películas y juegos.",
+            "Minecraft ha sido utilizado como herramienta educativa en escuelas y universidades de todo el mundo.",
+            "En 2011, un fanático de Minecraft construyó un modelo a escala 1:1 de la Estrella de la Muerte de Star Wars en el juego.",
+            "El código de Minecraft contiene un huevo de Pascua (easter egg) que muestra una versión en 2D del juego Doom.",
+            "En 2013, Minecraft fue utilizado para transmitir un concierto en vivo de la banda sueca C418, compositor de la música del juego.",
+            "El creador de Minecraft, Markus Persson, compró una mansión de $70 millones en Beverly Hills después de vender el juego a Microsoft.",
+            "Minecraft tiene una versión especial para la enseñanza de la química, llamada Minecraft: Education Edition.",
+            "En 2014, se encontró un virus informático que se propagaba dentro del juego Minecraft.",
+            "Minecraft ha sido utilizado por la NASA como herramienta de diseño para sus proyectos espaciales.",
+            "Un jugador de Minecraft construyó una réplica a escala 1:1 de la ciudad de Chicago dentro del juego.",
+            "El código fuente de Minecraft contiene una referencia a la serie de televisión 'Lost'.",
+            "El nombre del personaje principal, Steve, nunca fue mencionado oficialmente en el juego hasta la actualización 'Better Together'.",
+            "El juego original de Minecraft estaba escrito en lenguaje de programación Java.",
+            "En 2019, se creó un proyecto de realidad aumentada llamado 'Minecraft Earth', que permitía a los jugadores construir en el mundo real.",
+            "En 2020, durante la pandemia de COVID-19, Minecraft organizó el festival virtual 'Block by Blockwest'.",
+            "El libro oficial de Minecraft, 'Minecraft: The Island', escrito por Max Brooks, es una novela basada en el juego.",
+            "En 2021, Minecraft alcanzó los 140 millones de jugadores activos mensuales en todo el mundo.",
+
+            "El creador de Minecraft, Markus Persson, vendió el juego a Microsoft por $2.5 mil millones en 2014.",
+            "El primer objeto añadido a Minecraft fue la antorcha.",
+            "El enderdragon, jefe final de Minecraft, fue el primer jefe agregado al juego.",
+            "La palabra 'Minecraft' se menciona más de 95 veces en el libro Guinness de los récords.",
+            "En 2011, el primer Minecraft Convention se llevó a cabo en Las Vegas.",
+            "El nombre del bloque 'esponja' en el código fuente de Minecraft es 'Soggy Biscuit' (galleta mojada).",
+            "El creador de Minecraft, Markus Persson, es conocido por su afición a los sombreros de copa.",
+            "Minecraft ha sido utilizado en terapias para ayudar a personas con autismo y ansiedad.",
+            "Existen versiones modificadas de Minecraft que permiten a los jugadores construir con bloques de Lego virtuales.",
+            "El 9 de mayo se celebra el 'Día de Minecraft' en honor al lanzamiento del juego en 2009.",
+            "En 2019, se creó una versión de Minecraft para realidad virtual llamada 'Minecraft VR'.",
+            "El mundo de Minecraft tiene un límite teórico de 9,223,372,036,854,775,807 bloques.",
+            "Existen servidores de Minecraft dedicados exclusivamente a recrear ciudades y monumentos famosos del mundo real.",
+            "El juego tiene un logro oculto llamado '¿Por qué estás tan obsesionado conmigo?' que se obtiene al lanzar una perla de Ender al vacío.",
+            "La canción 'Sweden' de Minecraft es tan popular que se ha utilizado en conciertos y eventos musicales fuera del juego.",
+            "En 2018, Minecraft fue agregado al Salón de la Fama de los Videojuegos.",
+            "El diamante es el material más valioso y resistente en Minecraft.",
+            "Existen mods de Minecraft que añaden nuevos biomas y dimensiones al juego, como el 'Aether' y el 'Twilight Forest'.",
+            "El libro de encantamientos en Minecraft se llama 'Lectern' (Atril) en el código fuente del juego.",
+            "El 17 de mayo se celebra el 'Día Internacional de Minecraft', una fecha dedicada a la comunidad y a la creatividad en el juego.",
+            "En 2020, Minecraft celebró su 11º aniversario con un evento especial llamado 'Minecraft Festival'."
+        ]
+    },
+
+    "playerBody": {
+        "slash": {
+            "name": "cuerpo_jugador",
+            "description": "「Diversión」ver el cuerpo de jugadores con cuentas en Mojang",
+    
+            "option": {
+                "name": "nick",
+                "description": "inserta el nombre de un jugador"
+            }
+        },
+    
+        "embed": {
+            "notfound": {
+                "title": "¡Jugador no encontrado!",
+                "description": "> 🤔 • ¡El jugador **{player_name}** no puede ser encontrado! ¡Tal vez no tenga una cuenta oficial registrada en Mojang!"
+            },
+    
+            "showbody": {
+                "title": "Cuerpo de {player_name}"
+            }
+        }
+    },    
+    
+    "playerHead": {
+        "slash": {
+            "name": "cabeza_jugador",
+            "description": "「Diversión」ver las cabezas de jugadores con cuentas en Mojang",
+    
+            "option": {
+                "name": "nick",
+                "description": "inserta el nombre de un jugador"
+            }
+        },
+    
+        "embed": {
+            "notfound": {
+                "title": "¡Jugador no encontrado!",
+                "description": "> 🤔 • ¡El jugador **{player_name}** no puede ser encontrado! ¡Tal vez no tenga una cuenta oficial registrada en Mojang!"
+            },
+    
+            "showhead": {
+                "title": "Cabeza de {player_name}"
+            }
+        }
+    },
+    
+    "playerSkin": {
+        "slash": {
+            "name": "skin_jugador",
+            "description": "「Diversión」ver las skins de jugadores con cuentas en Mojang",
+    
+            "option": {
+                "name": "nick",
+                "description": "inserta el nombre de un jugador"
+            }
+        },
+    
+        "embed": {
+            "notfound": {
+                "title": "¡Jugador no encontrado!",
+                "description": "> 🤔 • ¡El jugador **{player_name}** no puede ser encontrado! ¡Tal vez no tenga una cuenta oficial registrada en Mojang!"
+            },
+    
+            "showskin": {
+                "title": "Skin de {player_name}"
+            }
+        }
+    },
+    
+    "say": {
+        "slash": {
+            "name": "hablar",
+            "description": "「Diversión」¿Quieres hablar? ¡Hablaré por ti!",
+    
+            "string": {
+                "name": "texto",
+                "description": "añade un texto de entre 10 y 200 caracteres"
+            }
+        },
+    
+        "embed": {
+            "text": {
+                "title": "{user_name} dijo:",
+                "description": "> {text}"
+            },
+    
+            "limit": {
+                "title": "¡Error al hablar!",
+                "description": "💌 • Solo puedes agregar un texto de entre **10** y **200** caracteres. ¡Inténtalo de nuevo más tarde!"
+            }
+        }
+    },    
+
+    "avatar": {
+        "slash": {
+            "name": "avatar",
+            "description": "「General」ver y descargar tu avatar o el de otros miembros"
+        },
+    
+        "embed": {
+            "title": "Avatar de {user_name}",
+    
+            "button": {
+                "label": "Descargar",
+                "emoji": "🔗"
+            }
+        }
+    },
+    
+    "ping": {
+        "slash": {
+            "name": "ping",
+            "description": "「General」ver el ping del bot y el ping del servidor"
+        },
+    
+        "embed": {
+            "title": "¿Ping?",
+            "description": "> Entonces, ¿pidieron el ping? 🏓 • ¡Pong!\n\n```1. API: {api} ms\n\n2. Gateway: {gateway} ms```"
+        }
+    },
+    
+    "serverInfo": {
+        "slash": {
+            "name": "informacion_servidor",
+            "description": "「General」información general sobre el servidor"
+        },
+    
+        "embed": {
+            "title": "Información del servidor:",
+            "description": "> 🌐 • Aquí tienes la información en tiempo real sobre el servidor:\n\n```👑 Propietario: {owner_id}\n👥 Total de miembros: {member_count}\n📕 Total de roles: {role_count}\n💻 Total de bots: {bot_count}\n\n📑 Canales de texto: {channel_text_count}\n🎤 Canales de voz: {channel_voice_count}\n📫 Total de categorías: {channel_category_count}```\n> Al final del día... ¡Es un hermoso servidor!"
+        }
+    },
+    
+    "userInfo": {
+        "slash": {
+            "name": "informacion_usuario",
+            "description": "「General」ver información de usuarios del servidor"
+        },
+    
+        "embed": {
+            "title": "Perfil de {user_name}",
+            "description": "> Información general del usuario:\n\n```📑 ID: {user_id}\n💻 BOT: {is_bot}\n📫 Etiqueta: {user_tag}\n📅 Cuenta creada el: {account_created}```\n> Al final del día, ¡creo que es un buen usuario!"
+        }
+    },    
+
+    "sendTicket": {
+        "slash": {
+            "name": "enviar_ticket",
+            "description": "「Admin」Enviar embed de creación del ticket"
+        },
+    
+        "embed": {
+            "incompleteconfig": {
+                "title": "¡Error al enviar!",
+                "description": "> 🛑 • ¡Completa la configuración del ticket usando **/ticket set** antes de enviar el embed de creación de tickets!"
+            },
+    
+            "notfoundchannels": {
+                "title": "¡Error al enviar!",
+                "description": "> 🛑 • ¡Parece que los canales configurados para el ticket ya no existen en el servidor! ¡Usa **/ticket set** de nuevo!"                
+            },
+    
+            "success": {
+                "title": "¡Éxito!",
+                "description": "> 🎫 • ¡El embed del ticket se ha enviado correctamente! ¡Ahora los usuarios del servidor podrán crear nuevos tickets!"
+            },
+    
+            "close": {
+                "title": "¡Ticket Cerrado!",
+                "description": "> 🎟 • El ticket se ha cerrado y se eliminará en 5 segundos..."
+            },
+    
+            "successcreated": {
+                "title": "¡Ticket Creado!",
+                "description": "> ¡Tu ticket se ha creado correctamente! ¡También se te ha mencionado en el canal de tu ticket!"
+            },
+    
+            "alreadycreated": {
+                "title": "¡Oops!",
+                "description": "> ¡Parece que ya tienes un ticket abierto, ciérralo antes de crear otro!"
+            }
+        }
+    },
+    
+    "setTicket": {
+        "slash": {
+            "name": "set_ticket",
+            "description": "「Admin」Definir canal de interacción de los tickets"
+        },
+    
+        "embed": {
+            "title": "¡Ticket Definido!",
+            "description": "🎫 • ¡El ticket se ha configurado correctamente para el canal {ticket_channel}! ¡Usa **/enviar ticket** para enviar el embed del ticket!"
+        }
+    }
+}

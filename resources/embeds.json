@@ -1,0 +1,22 @@
+{
+    "ticket": {
+        "title": "Minescord Tickets",
+        "description": "> 👋 • Hello! Welcome to the ticket support of the server. To create a ticket, simply react with the 🎫 emoji below. **Remember** to follow the following rules when creating a ticket:\n\n```- Be clear and concise in describing your problem!\n- Avoid creating multiple tickets for the same issue.\n- Do not share personal or sensitive information.\n- Respect the support team.```\n> ⭐ • Once a ticket is created, a member of our team will contact you to assist you as soon as possible.",
+        "banner": "https://pbs.twimg.com/media/DtXp_w5UwAEpHM1.jpg",
+        
+        "button": {
+            "label": "Open Ticket",
+            "emoji": "🎫"
+        },
+
+        "created": {
+            "title": "Minescord Support",
+            "description": "> 👋 • Hello! Welcome to the server support! Please clarify your problem/question so that our team can assist you!",
+
+            "button": {
+                "label": "Close Ticket",
+                "emoji": "🔒"
+            }
+        }
+    }
+}

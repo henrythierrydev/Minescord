@@ -1,0 +1,606 @@
+{
+    "universal": {
+        "embeds": {
+            "permission": {
+                "title": "Error!",
+                "description": "⛔ • Oops! It seems that you are not an administrator! Unfortunately, only **Admins** can execute this command. What a shame."
+            },
+
+            "user": {
+                "title": "Impostor?",
+                "description": "🕵️‍♂️ • I've been analyzing you, and it seems that you are not the author of this interaction... To use this button/menu, execute the desired command!"
+            },
+
+            "bot": {
+                "title": "Beep Boop?",
+                "description": "🤖 • You cannot use this command on bots, but you can try it with a human, how about that?"
+            },
+
+            "broken": {
+                "title": "Critical Error!",
+                "description": "> 🔴 • There was an internal error while executing this command. Contact the server administrator to fix it!"
+            },
+
+            "unavailable": {
+                "title": "Oops!",
+                "description": "> 💔 • This command is not available as it has been disabled by the server owner. If you wish, please contact them!"
+            },
+
+            "botperms": {
+                "title": "Me on Top?",
+                "description": "🛑 • It was not possible to execute this command because my role is not high enough, or you cannot perform it! Please try again later!"
+            },
+
+            "adm": {
+                "title": "An Admin?",
+                "description": "> 💔 • This command is only available to administrators! Please try again later."
+            }
+        },
+
+        "slash": {
+            "user": {
+                "name": "member",
+                "description": "select a member of the server."
+            },
+
+            "role": {
+                "name": "role",
+                "description": "select a role from the server."
+            },
+
+            "string": {
+                "name": "reason",
+                "description": "add a text explaining the reasons."
+            },
+
+            "int": {
+                "name": "value",
+                "description": "add an integer value."
+            },
+
+            "channel": {
+                "name": "channel",
+                "description": "select a channel."
+            },
+
+            "category": {
+                "name": "category",
+                "description": "select a category."
+            }
+        }
+    },
+
+    "ip": {
+        "slash": {
+            "name": "ip",
+            "description": "「Info」see the server IP and come play with us!"
+        },
+
+        "embed": {
+            "title": "Server IP",
+            "description": "> 👋 • Hello **{user_name}**, come play with us on {server_name} and have even more fun! Copy and enter the IP below to join the server!\n\n```IP: {server_ip}\nPort: {server_port}```\n> Have a great game!"
+        }
+    },
+
+    "socials": {
+        "slash": {
+            "name": "socials",
+            "description": "「Info」see the server's social media and follow us"
+        },
+
+        "embed": {
+            "inactive": {
+                "title": "What a shame!",
+                "description": "> 💔 • The server doesn't have any social media yet! Please try again later."
+            },
+
+            "social": {
+                "title": "Social Media",
+                "description": "> 🖼 • Stay updated with the latest news from the server! Follow our social media accounts to stay informed about daily/weekly updates.\n\n> 🔗 • Click on your favorite social media platform and start following our profile right now! This way, you won't miss out on any of the exciting things we have in store for you.\n\n> 👨‍👩‍👧‍👦 • And don't forget to share our pages with your friends! By doing so, you'll help our community grow and reach more people. Together, we can make our server an even more amazing place!"
+            }
+        }
+    },
+
+    "status": {
+        "slash": {
+            "name": "status",
+            "description": "「Info」see the current server status"
+        },
+
+        "embed": {
+            "status": {
+                "title": "Server Status:",
+                "description": "```Status: {online_check}\nPlayers: {current_players}/{max_players}```\n> 🟢 • Real-time status for the server: **{server_name}**"
+            },
+
+            "notfound": {
+                "title": "Status Error!",
+                "description": "> 🛑 • Oops! It seems that no server was found with that **IP/port**, please contact the server administrator to make a correction! [404]"
+            }
+        }
+    },
+
+    "addRole": {
+        "slash": {
+            "name": "add_role",
+            "description": "「Admin」add roles to server members"
+        },
+
+        "embed": {
+            "roleadd": {
+                "title": "Role Added!",
+                "description": "✅ • The role **{role_name}** has been successfully added to **{user_name}**! I hope they like it :D."
+            },
+
+            "rolealready": {
+                "title": "Error adding role!",
+                "description": "👤 • The role could not be added because the member already has it or you do not have sufficient permissions! Please try again later!"
+            }
+        }
+    },
+
+    "announcement": {
+        "slash": {
+            "name": "announce",
+            "description": "「Admin」make an announcement to the entire server",
+
+            "option": {
+                "channel": {
+                    "name": "channel",
+                    "description": "select a text channel"
+                },
+
+                "mention": {
+                    "name": "mention",
+                    "description": "role to be mentioned (only @)"
+                }
+            }
+        },
+
+        "modal": {
+            "main_title": "Announce",
+
+            "title": {
+                "label": "Title",
+                "placeholder": "Enter a title between 10 and 100 characters"
+            },
+
+            "description": {
+                "label": "Description",
+                "placeholder": "Enter a description between 20 and 500 characters"
+            },
+
+            "banner": {
+                "label": "Banner",
+                "placeholder": "Insert a banner (only links are valid)"
+            }
+        },
+
+        "embed": {
+            "link": {
+                "title": "Error announcing!",
+                "description": "📑 • The link you entered does not exist or is not a valid link! Please try again later!"
+            },
+
+            "send": {
+                "title": "Success!",
+                "description": "📢 • The announcement was successfully sent to the {announcement_channel} channel. I hope it was a great announcement!"
+            }
+        }
+    },
+
+    "ban": {
+        "slash": {
+            "name": "ban",
+            "description": "「Admin」ban an annoying user from your server"
+        },
+
+        "embed": {
+            "reason": {
+                "title": "Error!",
+                "description": "🛑 • Hold on! Before banning the user, please provide a ban reason between 10 and 100 characters to make it even better :D."
+            },
+
+            "admin": {
+                "title": "Big Admin?",
+                "description": "🛑 • Hold on! You can't ban another member who is also an administrator of the server! What were you thinking?"
+            },
+
+            "banned": {
+                "title": "Success!",
+                "description": "> ✅ • The user **{victim}** has been successfully banned from the server by **{author_name}**. No one told you to violate the rules, you silly!\n\n> 📑 • Reason: {reason}."
+            }
+        }
+    },
+
+    "clear": {
+        "slash": {
+            "name": "clear",
+            "description": "「Admin」clear messages from server chats."
+        },
+
+        "embed": {
+            "value": {
+                "title": "Error clearing!",
+                "description": "🗑 • Hold on! You can only clear **1 to 100** messages in the chat at a time. You're in a hurry!"
+            },
+
+            "cleaned": {
+                "title": "Success!",
+                "description": "✅ • The cleaning truck passed by and **{value}** chat messages were cleaned by **{author}**! I hope it's cleaner now."
+            }
+        }
+    },
+
+    "kick": {
+        "slash": {
+            "name": "kick",
+            "description": "「Admin」kick an annoying user from your server"
+        },
+
+        "embed": {
+            "reason": {
+                "title": "Error!",
+                "description": "🛑 • Hold on! Before kicking the user, please provide a kick reason between 10 and 100 characters to make it even better :D."
+            },
+
+            "admin": {
+                "title": "Big Admin?",
+                "description": "🛑 • Hold on! You can't kick another member who is also an administrator of the server! What were you thinking?"
+            },
+
+            "kicked": {
+                "title": "Success!",
+                "description": "> ✅ • The user **{victim}** has been successfully kicked from the server by **{author_name}**. No one told you to violate the rules, you silly!\n\n> 📑 • Reason: {reason}."
+            }
+        }
+    },
+
+    "lock": {
+        "slash": {
+            "name": "lock",
+            "description": "「Admin」prevent users from sending messages by locking the channel!"
+        },
+
+        "embed": {
+            "locked": {
+                "title": "Channel Locked!",
+                "description": "> 🔒 • The channel has been successfully locked by **{author}**, now no members with default permissions can send messages in this channel! To unlock, use **/unlock**!"
+            },
+
+            "alreadylocked": {
+                "title": "Error Locking!",
+                "description": "> ⛔ • You cannot lock a channel that is already locked, to use this command in this channel, first use **/unlock**!"
+            }
+        }
+    },
+
+    "mute": {
+        "slash": {
+            "name": "mute",
+            "description": "mute a user in the server for a specified time",
+
+            "option": {
+                "number": {
+                    "name": "time",
+                    "description": "select the mute time"
+                }
+            }
+        },
+
+        "embed": {
+            "muted": {
+                "title": "User Muted!",
+                "description": "> 🔇 • The user **{user_name}** has been successfully muted in the server! No one told you to break the rules, you silly!"
+            },
+
+            "admin": {
+                "title": "Big Admin?",
+                "description": "> 🛑 • You can't mute other users who are also administrators of the server!"
+            }
+        }
+    },
+
+    "removeRole": {
+        "slash": {
+            "name": "remove_role",
+            "description": "「Admin」remove roles from server members"
+        },
+
+        "embed": {
+            "roleremove": {
+                "title": "Role Removed!",
+                "description": "✅ • The **{role_name}** role has been successfully removed from **{user_name}**! I hope they don't mind! :D."
+            },
+
+            "nrole": {
+                "title": "Error removing!",
+                "description": "👤 • It was not possible to remove the role because the member doesn't have it! Please try again later!"
+            }
+        }
+    },
+
+    "unlock": {
+        "slash": {
+            "name": "unlock",
+            "description": "「Admin」unlock channels for users to interact!"
+        },
+        
+        "embed": {
+            "unlocked": {
+                "title": "Channel Unlocked!",
+                "description": "> 🔓 • The channel has been successfully unlocked by **{author}**, now all members can send messages in this channel again! To lock, use **/lock**!"
+            },
+
+            "alreadyunlocked": {
+                "title": "Error Unlocking!",
+                "description": "> ⛔ • You cannot unlock a channel that is already unlocked, to use this command in this channel, first use **/lock**!"
+            }
+        }
+    },
+
+    "coinflip": {
+        "slash": {
+            "name": "coinflip",
+            "description": "「Fun」flip a coin and find out if it's heads or tails."
+        },
+
+        "strings": {
+            "heads": "heads",
+            "tails": "tails"
+        },
+
+        "embed": {
+            "title": "Coin Flipped!",
+            "description": "> 🪙 • You flipped the coin and this time it landed on **{result}**! I hope it's the expected outcome!"
+        }
+    },
+
+    "curiosities": {
+        "slash": {
+            "name": "curiosities",
+            "description": "「Fun」random curiosities about Minecraft"
+        },
+    
+        "embed": {
+            "title": "A Curiosity!",
+            "description": "Did you know that: {curiosity}"
+        },
+
+        "array": [
+            "The world of Minecraft is procedurally generated, which means each world is unique and random.",
+            "There are over 200 different types of blocks in Minecraft.",
+            "The total distance a player can travel in a single Minecraft world is 4,722,366,482 meters.",
+            "There are 2 billion possible combinations of skins for the game's characters.",
+            "The theme music of Minecraft was composed by C418 and is called 'Sweden'.",
+            "Minecraft was created by Markus Persson (also known as Notch) in 2009.",
+            "Minecraft is the best-selling game of all time, with over 200 million copies sold.",
+            "Minecraft was initially developed as a personal project by Markus Persson.",
+            "Minecraft was inspired by games like Infiniminer and Dwarf Fortress.",
+            "Minecraft is a sandbox game, which means players have complete freedom to explore and create whatever they want.",
+            "Minecraft is a game that can be played on various platforms, including PC, consoles, and mobile devices.",
+            "There are two main versions of Minecraft: Java Edition and Bedrock Edition.",
+            "The Java Edition of Minecraft is the oldest and offers more features for modding and game customization.",
+            "The Bedrock Edition of Minecraft was created to be more accessible and is available on multiple platforms.",
+            "Minecraft is a game that encourages creativity and problem-solving, making it popular among educators.",
+            "Players can find and tame animals in Minecraft, including wolves, horses, and cats.",
+            "There are various types of monsters that appear at night in Minecraft, including zombies, skeletons, and spiders.",
+            "Minecraft has a crafting system that allows players to create a variety of tools and equipment.",
+            "Players can build houses and structures using a variety of materials in Minecraft, including wood, stone, and brick.",
+            "There are several different biomes in Minecraft, including forests, plains, mountains, and deserts.",
+            "Players can find various villages in Minecraft, where they can trade with villagers and find treasures.",
+            "There are several dungeons and fortresses in Minecraft where players can find treasures and fight bosses.",
+            "Players can play in survival mode in Minecraft, where they have to fight monsters and manage their health and resources.",
+            "Minecraft has a creative mode, where players have unlimited access to all materials and can build anything without restrictions.",
+            "Players can play in adventure mode in Minecraft, where they have to follow a storyline and complete specific objectives.",
+            "Minecraft has a redstone system that allows players to create circuits and electronic devices in the game.",
+            "Minecraft has a hardcore mode where, if the player dies, they are permanently banned from the world.",
+            "Minecraft has a command system that allows players to execute various actions in the game.",
+            "Players can create portals to a world called 'The Nether', which is a dangerous place full of monsters.",
+            "There is a second world parallel to the Nether called 'The End', where players can fight the final dragon.",
+            "There are various types of boats that players can build in Minecraft, including rowboats and steamboats.",
+            "Minecraft has an enchantment system that allows players to create potions with various different effects.",
+            "Players can create traps and defenses to protect their structures in Minecraft.",
+            "Minecraft has a trading system where players can buy and sell items with villagers.",
+            "There are various different types of trees in Minecraft, including oak, birch, and spruce.",
+            "Players can find underground caves in Minecraft, which can contain rare and dangerous resources."
+        ]
+    },
+
+
+    "playerBody": {
+        "slash": {
+            "name": "player_body",
+            "description": "「Fun」view bodies of players with Mojang accounts",
+    
+            "option": {
+                "name": "nickname",
+                "description": "Enter a player's nickname"
+            }
+        },
+    
+        "embed": {
+            "notfound": {
+                "title": "Player Not Found!",
+                "description": "> 🤔 • The player **{player_name}** could not be found! Maybe because they don't have an official Mojang registered account!"
+            },
+    
+            "showbody": {
+                "title": "{player_name}'s Body"
+            }
+        }
+    },
+    
+    "playerHead": {
+        "slash": {
+            "name": "player_head",
+            "description": "「Fun」view heads of players with Mojang accounts",
+    
+            "option": {
+                "name": "nickname",
+                "description": "Enter a player's nickname"
+            }
+        },
+    
+        "embed": {
+            "notfound": {
+                "title": "Player Not Found!",
+                "description": "> 🤔 • The player **{player_name}** could not be found! Maybe because they don't have an official Mojang registered account!"
+            },
+    
+            "showhead": {
+                "title": "{player_name}'s Head"
+            }
+        }
+    },
+    
+    "playerSkin": {
+        "slash": {
+            "name": "player_skin",
+            "description": "「Fun」view skins of players with Mojang accounts",
+    
+            "option": {
+                "name": "nickname",
+                "description": "Enter a player's nickname"
+            }
+        },
+    
+        "embed": {
+            "notfound": {
+                "title": "Player Not Found!",
+                "description": "> 🤔 • The player **{player_name}** could not be found! Maybe because they don't have an official Mojang registered account!"
+            },
+    
+            "showskin": {
+                "title": "{player_name}'s Skin"
+            }
+        }
+    },
+    
+    "say": {
+        "slash": {
+            "name": "say",
+            "description": "「Fun」want to say something? I'll say it for you!",
+    
+            "string": {
+                "name": "text",
+                "description": "Add a text between 10 and 200 characters."
+            }
+        },
+    
+        "embed": {
+            "text": {
+                "title": "{user_name} said:",
+                "description": "> {text}"
+            },
+    
+            "limit": {
+                "title": "Error while speaking!",
+                "description": "💌 • You can only add a text between **10** and **200** characters, please try again later!"
+            }
+        }
+    },
+
+    "avatar": {
+        "slash": {
+            "name": "avatar",
+            "description": "「General」view and download your own avatar or other members' avatars"
+        },
+    
+        "embed": {
+            "title": "{user_name}'s Avatar",
+    
+            "button": {
+                "label": "Download",
+                "emoji": "🔗"
+            }
+        }
+    },
+    
+    "ping": {
+        "slash": {
+            "name": "ping",
+            "description": "「General」check the bot's ping and server ping"
+        },
+    
+        "embed": {
+            "title": "Ping?",
+            "description": "> So, you asked for ping? 🏓 • Pong!\n\n```1. API: {api} ms\n\n2. Gateway: {gateway} ms```"
+        }
+    },
+    
+    "serverInfo": {
+        "slash": {
+            "name": "server_info",
+            "description": "「General」general information about the server"
+        },
+    
+        "embed": {
+            "title": "Server Information:",
+            "description": "> 🌐 • Here are the real-time server information:\n\n```👑 Owner: {owner_id}\n👥 Total Members: {member_count}\n📕 Total Roles: {role_count}\n💻 Total Bots: {bot_count}\n\n📑 Text Channels: {channel_text_count}\n🎤 Voice Channels: {channel_voice_count}\n📫 Total Categories: {channel_category_count}```\n> In the end... It's a beautiful server!"
+        }
+    },
+    
+    "userInfo": {
+        "slash": {
+            "name": "user_info",
+            "description": "「General」view information about server users"
+        },
+    
+        "embed": {
+            "title": "{user_name}'s Profile",
+            "description": "> General information about the user:\n\n```📑 ID: {user_id}\n💻 BOT: {is_bot}\n📫 TAG: {user_tag}\n📅 Account Created On: {account_created}```\n> In the end, I think they are a good user!"
+        }
+    },
+
+    "sendTicket": {
+        "slash": {
+            "name": "send_ticket",
+            "description": "「Admin」Send the ticket creation embed"
+        },
+    
+        "embed": {
+            "incompleteconfig": {
+                "title": "Error Sending!",
+                "description": "> 🛑 • Complete the ticket configuration using **/ticket set** before sending the ticket creation embed!"
+            },
+    
+            "notfoundchannels": {
+                "title": "Error Sending!",
+                "description": "> 🛑 • It seems that the channels configured for the ticket no longer exist on the server! Use **/ticket set** again!"                
+            },
+    
+            "success": {
+                "title": "Success!",
+                "description": "> 🎫 • The ticket embed has been successfully sent! Now server members can create new tickets!"
+            },
+    
+            "close": {
+                "title": "Ticket Closed!",
+                "description": "> 🎟 • The ticket has been closed and will be deleted in 5 seconds..."
+            },
+    
+            "successcreated": {
+                "title": "Ticket Created!",
+                "description": "> Your ticket has been successfully created! You have also been mentioned in the channel for your ticket!"
+            },
+    
+            "alreadycreated": {
+                "title": "Oops!",
+                "description": "> It seems you already have an open ticket, close it before creating another one!"                
+            }
+        }
+    },
+    
+    "setTicket": {
+        "slash": {
+            "name": "set_ticket",
+            "description": "「Admin」Set the ticket interaction channel"
+        },
+    
+        "embed": {
+            "title": "Ticket Set!",
+            "description": "🎫 • The ticket has been successfully set to the channel {ticket_channel}. Use **/send ticket** to send the ticket embed!"
+        }
+    }    
+}
