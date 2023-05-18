@@ -118,7 +118,6 @@
 .feature-text p {
     margin: 20px 0px;
     font-size: 16px;
-    font-family: 'Poppins';
 }
 
 .feature-text h1::after {
@@ -243,7 +242,6 @@
 }
 
 .footer {
-    padding: 40px;
     text-align: center;
     color: var(--primary-text-color);
     background-color: var(--third-background-color);
@@ -423,6 +421,10 @@
         .topics {
             padding: 30px;
         }
+
+        .topics-title span {
+            font-size: 16px;
+        }        
     }
 
     @media screen and (min-width: 425px) {
