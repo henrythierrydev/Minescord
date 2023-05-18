@@ -49,39 +49,6 @@
     display: none;
 }
 
-/*--- Page introduction ---*/
-
-.introduction {
-    display: none;
-    padding: 10px 70px;
-    background-color: var(--third-background-color);
-}
-
-.introduction h1 {
-    font-size: 28px;
-    font-weight: 900;
-}
-
-.introduction span {
-    text-decoration: underline;
-    text-decoration-line: underline;
-    text-decoration-thickness: 3px;
-}
-
-.introduction-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.introduction img {
-    margin: 10px;
-    border-radius: 5px;
-    border: 2px solid white;
-    width: 120px;
-    height: 120px;
-}
-
 /*--- Page Features ---*/
 
 .features {
@@ -121,9 +88,7 @@
 }
 
 .feature-text h1 {
-    font-family: 'Panton';
     font-size: 70px;
-    text-transform: uppercase;
 }
 
 .fc-1 h1 {
@@ -189,12 +154,136 @@
 .github-box h1 {
     font-size: 70px;
     text-shadow: 0px 3px 0px #777;
-    text-transform: uppercase;
-    font-family: 'Panton', sans-serif;
 }
 
 .github-box span {
     color: #f10f48;
     text-shadow: 0px 3px 0px #790623;
-    font-family: 'Panton', sans-serif;
+}
+
+/*--- Page Topics ---*/
+
+.topics {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--primary-background-color);
+}
+
+.topics-title {
+    margin-bottom: 30px;
+}
+
+.topics-title h1 {
+    font-size: 120px;
+    text-shadow: 0px 5px 0px #555;
+}
+
+.topics-title span {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.card-item {
+    min-width: 350px;
+    max-width: 400px;
+    margin: 2em 1em;
+    background-color: #2B2B2B;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-item:hover img {
+    transform: scale(1.1);
+}
+
+.card-item:hover {
+    cursor: pointer;
+}
+
+.card-item:hover a {
+    transform: translateY(10%);
+}
+
+.card-item img {
+    width: 100%;
+    height: 50%;
+    border-bottom: 2px solid #888;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-body {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card-body h2 {
+    font-size: 24px;
+}
+
+.card-body span {
+    margin: 5px 0px;
+    font-size: 16px;
+}
+
+.card-body h2::after {
+    content: '';
+    margin: 3px auto;
+    width: 70%;
+    height: 2px;
+    background-color: #555;
+    display: block;
+}
+
+.footer {
+    padding: 40px;
+    text-align: center;
+    color: var(--primary-text-color);
+    background-color: var(--third-background-color);
+}
+
+.footer span {
+    color: #f10f48;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+    .header {
+        padding: 5vh;       
+    }
+
+    .features {
+        padding: 40px;
+    }
+
+    .feature-img img {
+        width: 400px;
+    }
+
+    .feature-text h1 {
+        font-size: 60px;
+    }
+
+    .github-box {
+        padding: 30px 50px;
+    }
+
+    .github-box h1 {
+        font-size: 60px;
+    }
+
+    .topics-title h1 {
+        font-size: 90px;
+    }
+    
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
