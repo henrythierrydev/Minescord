@@ -1,0 +1,200 @@
+@import url(../default.css);
+@import url(../Components/pallette.css);
+
+/*--- Page alert ---*/
+
+.nav {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #5865f2;
+}
+
+.nav span {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/*--- Page header ---*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10vh;
+
+    color: var(--primary-text-color);
+    text-align: center;
+    background-image: url(../../Images/banner.png);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header h1 {
+    font-size: 120px;
+    text-transform: uppercase;
+    font-family: 'Panton', sans-serif;
+    text-shadow: 0px 7px 0px #383838;
+}
+
+.header span {
+    font-size: 24px;
+    text-shadow: 0px 0px 10px black;
+    font-weight: 600;
+}
+
+.hm {
+    display: none;
+}
+
+/*--- Page introduction ---*/
+
+.introduction {
+    display: none;
+    padding: 10px 70px;
+    background-color: var(--third-background-color);
+}
+
+.introduction h1 {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.introduction span {
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+}
+
+.introduction-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.introduction img {
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid white;
+    width: 120px;
+    height: 120px;
+}
+
+/*--- Page Features ---*/
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 70px;
+    background-color: var(--third-background-color);
+}
+
+.feature-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.feature-content-reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-img img {
+    width: 500px;
+    max-width: 500px;
+    border: 2px solid white;
+    box-shadow: 0px 5px 0px;
+    border-radius: 5px;
+}
+
+.feature-text {
+    margin: 60px;
+}
+
+.feature-text-reverse {
+    margin: 0px 90px 0px 0px;
+}
+
+.feature-text h1 {
+    font-family: 'Panton';
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.fc-1 h1 {
+    color: #26eb64;
+}
+
+.fc-1 h1::after {
+    background-color: #23c057;
+}
+
+.fc-2 h1 {
+    color: #417af5;
+}
+
+.fc-2 h1::after {
+    background-color: #417af5;
+}
+
+.fc-3 h1 {
+    color: #edf053;
+}
+
+.fc-3 h1::after {
+    background-color: #c5c74a;
+}
+
+.feature-text p {
+    margin: 20px 0px;
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+.feature-text h1::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 4px;
+    margin: 0;
+}
+
+/*--- Page Github ---*/
+
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+    background-color: var(--secondary-background-color);
+}
+
+.github-box {
+    border: 2px solid #fff;
+    color: var(--primary-text-color);
+    padding: 3em 9em;
+    border-radius: 5px;
+    background-image: url(../../Images/banner2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.github-box h1 {
+    font-size: 70px;
+    text-shadow: 0px 3px 0px #777;
+    text-transform: uppercase;
+    font-family: 'Panton', sans-serif;
+}
+
+.github-box span {
+    color: #f10f48;
+    text-shadow: 0px 3px 0px #790623;
+    font-family: 'Panton', sans-serif;
+}
