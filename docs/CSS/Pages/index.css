@@ -362,6 +362,10 @@
         font-size: 40px;
     }
 
+    .feature-content p {
+        font-size: 14px;
+    }
+
     .feature-content h1::after {
         margin: 0 auto;
         width: 30%;
