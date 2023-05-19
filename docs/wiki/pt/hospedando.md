@@ -9,4 +9,4 @@
 
 # 🎯 • Tutorial
 
-> 
+> Existem milhares de hospedagens de bot de discord online e muitas das vezes totalmente gratuitas. Após conseguir uma você pode seguir os passos a passo providos por sua host, normalmente você terá um painel famoso chamado de pterodactyl, basta adicionar a pasta do bot que você extraiu e configurou lá e reiniciar o bot no console e pronto! Todo o resto você poderá fazer no discord com comandos agora! **Aviso** Esse é um possível tutorial universal, mas não 100% últil, consulte sua host.
