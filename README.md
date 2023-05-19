@@ -1,4 +1,4 @@
-![Banner](https://github.com/Henry8K/Minescord/assets/119537238/1810ca28-0acc-4559-95e4-cab30df40741)
+![Banner](https://github.com/Henry8K/Minescord/assets/119537238/516e4ef6-bb37-4b65-88f4-e5540b085fb5)
 
 ---
 
