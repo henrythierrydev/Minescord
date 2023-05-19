@@ -7,9 +7,9 @@ github.addEventListener("click", function() {
 });
 
 minescordgithub.addEventListener("click", function() {
-    window.open('https://github.com/Henry8K/Minescord/');
+    window.location.href = 'https://github.com/Henry8K/Minescord/';
 });
 
 minescordwiki.addEventListener("click", function() {
-    window.open('https://henry8k.gitbook.io/minescord-wiki/');
+    window.location.href = 'https://henry8k.gitbook.io/minescord-wiki/';
 });
