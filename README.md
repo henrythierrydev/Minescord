@@ -38,4 +38,4 @@
 
 > Please note that the name "Minescord" is used only as a name for the project and does not refer to the actual name of the bot. Minescord is an open source project, and other people who download the code are free to create their own application under a different name and use it according to their preferences. It is important to note that there is a bot called "Minecord", but it has neither the goals nor the same references as this one!
 
-> Made with ❤ by Henry8K.
+> Made with ❤ by Henry8K. 
