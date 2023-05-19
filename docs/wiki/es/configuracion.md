@@ -14,7 +14,7 @@
 
 ```json
 {
-  "lang": "pt",
+  "lang": "es",
   "token": "TuTokenAquí"
 }
 ```

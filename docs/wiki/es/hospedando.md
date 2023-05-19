@@ -1,13 +1,9 @@
-![Banner](https://github.com/Henry8K/Minescord/assets/119537238/41827571-bf15-419b-b3f1-e50f3dfab9b7)
+# 🌐 • Hosting
 
----
-
-# 🌐 • Hospedando
-
-> ¡Bienvenido(a) al tema de Hospedando! Aquí encontrarás información y opciones para hospedar tu bot. Es importante elegir la mejor opción de alojamiento para garantizar que tu bot esté siempre disponible y funcione correctamente.
+> Welcome to the Hosting topic! Here you will find information and options for hosting your bot. It's important to choose the best hosting option to ensure that your bot is always available and functioning correctly.
 
 ---
 
 # 🎯 • Tutorial
 
-> Hay miles de servicios de alojamiento en línea para bots de Discord, y muchos de ellos son completamente gratuitos. Una vez que hayas conseguido uno, puedes seguir los pasos proporcionados por tu servicio de alojamiento. Por lo general, tendrás un panel de control conocido como "Pterodactyl". Simplemente agrega la carpeta del bot que has extraído y configurado en ese panel, reinicia el bot desde la consola ¡y listo! A partir de ahora, podrás gestionar el bot utilizando comandos en Discord. **Nota**: Este es un tutorial general, pero no garantiza ser 100% aplicable en todos los casos. Consulta la documentación de tu servicio de alojamiento para obtener instrucciones específicas.
+> There are thousands of online hosting services for Discord bots, and many of them are completely free. Once you have chosen a service, you can follow the steps provided by your hosting service. Usually, you will have a control panel called "Pterodactyl." Simply add the folder of the bot that you have extracted and configured in that panel, restart the bot from the console, and you're all set! From now on, you will be able to manage the bot using commands in Discord. **Note**: This is a general tutorial but does not guarantee to be 100% applicable in all cases. Please refer to the documentation of your hosting service for specific instructions.
