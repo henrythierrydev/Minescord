@@ -1,5 +1,5 @@
 const { ActivityType } = require('discord.js');
-const config = require('../Resources/status.json');
+const config = require('../resources/status.json');
   
 async function managePresence(client) 
 {
