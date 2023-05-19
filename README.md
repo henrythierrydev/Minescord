@@ -4,42 +4,38 @@
 
 # 👑 • Minescord
 
-> Seja bem-vindo ao **Minescord**, o mais novo bot para Discord desenvolvido em Discord.js, com comandos especialmente criados para atender às necessidades dos usuários e, principalmente, dos proprietários de servidores de Minecraft que utilizam o Discord como uma comunidade para engajar e atrair mais jogadores para o servidor.
+> Welcome to **Minescord**, the newest Discord bot developed in Discord.js, with commands specially designed to meet the needs of users and especially Minecraft server owners who use Discord as a community to engage and attract more players to the server.
 
-> Desfrute de um código de código aberto e totalmente privado, exclusivo para você e seu servidor. O Minescord oferece mais de 25 comandos, diversos sistemas únicos e bem desenvolvidos, e atualmente suporta três idiomas diferentes. Além disso, estamos trabalhando para adicionar suporte a mais 10 línguas, incluindo as principais: Mandarim, Hindi e Árabe!
+> Enjoy open source and totally private code that is unique to you and your server. Minescord offers over 25 commands, several unique and well-developed systems, and currently supports three different languages. In addition, we are working on adding support for 10 more languages, including the major ones: Mandarin, Hindi and Arabic!
 
 --- 
 
 # ✅ • Getting Started
 
-> Como mencionado anteriormente, esse bot foi projetado para ser o melhor bot do Discord para servidores de Minecraft. Para garantir uma experiência perfeita para nossos usuários, criamos um pequeno site com pequenas informações para novos usuários que não sabem ou são leigos no assunto de como baixar, criar e hospedar bots do Discord. Além disso caso precise de ajuda adicional você pode criar uma issue e pedir por mais informações.
+> To ensure a seamless experience for our users we have created a small website with a little information for new users who are new to Discord or are new to the subject of downloading, creating and hosting Discord bots. Also if you need additional help you can create an issue and ask for more information. However, if you already know the process, please download the bot via realeases.
 
-> Acesse o site do bot: [Minescord Website](https://minescord.vercel.app/)
+> Go to the bot site: [Minescord Website](https://minescord.vercel.app/)
+
+> Download Latest Release: [Minescord Realeases](https://github.com/Henry8K/Minescord/releases)
 
 ---
 
 # 📌 • Features
 
 ```
-• Mais de 20 comandos!
-• Bot multilíngue!
-• Prevenção de erros de execução.
-• Comandos criados especialmente para donos de servidores de Minecraft.
-• Suporte apenas para comandos de barra.
-• Configurações e painéis intuitivos!
-• Mensagens e erros intuitivos.
+- More than 20 commands!
+- Multilingual bot!
+- Execution error prevention.
+- Commands designed especially for Minecraft server owners.
+- Support for bar commands only.
+- Intuitive settings and panels!
+- Intuitive messages and errors.
 ```
 
---- 
+---
 
-# 🏆 • Comparison
+# 🔰 - Disclaimer
 
-> Um dos bots mais amados por donos de servidores de Minecraft, o Minescord em comparação com outros, já em sua fase beta possui até 10x mais recurso que outros bots famosos de Minecraft.
+> Please note that the name "Minescord" is used only as a name for the project and does not refer to the actual name of the bot. Minescord is an open source project, and other people who download the code are free to create their own application under a different name and use it according to their preferences. It is important to note that there is a bot called "Minecord", but it has neither the goals nor the same references as this one!
 
-| Recurso | Minescord | Minecord | Idle Miner | Bot C |
-|--- |--- |--- |--- |---|
-| Server Status | ✔️ | ✔️ | ❌ | ❌ |
-| Multilanguage | ✔️ | ❌ | ❌ | ❌ |
-| Private  | ✔️ | ❌ | ❌ | ❌ | 
-| Tickets | ✔️ | ❌ | ❌ | ❌ |
-| Error Log | ✔️ | ❌ | ❌ | ❌ |
+> Made with ❤ by Henry8K.
