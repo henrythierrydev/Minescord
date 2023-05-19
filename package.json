@@ -11,6 +11,7 @@
 
     "dependencies":{
        "discord.js":"^14.11.0",
-       "axios":"^0.24.0"
+       "axios":"^1.4.0",
+       "fs": "^0.0.1"
     }
 }
