@@ -38,8 +38,8 @@
 
 | Recurso | Minescord | Minecord | Idle Miner | Bot C |
 |--- |--- |--- |--- |---|
-| Server Status | ✔️ | ✔️ | ❌ |
-| Multilanguage | ✔️ | ❌ | ❌ |
+| Server Status | ✔️ | ✔️ | ❌ | ❌ |
+| Multilanguage | ✔️ | ❌ | ❌ | ❌ |
 | Private  | ✔️ | ❌ | ❌ | ❌ | 
 | Tickets | ✔️ | ❌ | ❌ | ❌ |
 | Error Log | ✔️ | ❌ | ❌ | ❌ |
