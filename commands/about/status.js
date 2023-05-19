@@ -66,8 +66,8 @@ module.exports =
         {
             const data = response.data;
             const isOnline = data.online || false;
-            const maxPlayers = data.players.max || 0;
-            const playerCount = data.players.online || 0;
+            const maxPlayers = data.players?.max ?? 0;
+            const playerCount = data.players?.online ?? 0;
             
             // -------------------
             //    STATUS EMBED
