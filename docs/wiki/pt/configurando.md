@@ -10,4 +10,18 @@
 
 # 🎯 • Tutorial
 
-> Primeiro de tudo faça a extração da pasta **Minescord** e abra ela em um editor de códigos, como por exemplo o Visual Studio Code, logo após abra o arquivo **config.json** que está no diretório principal do bot. Após ter aberto, volte ao site do **Discord Developer Portal** e na aba **BOT** clique em resetar token, após isso insira o token copiado na **config.json** onde está escrito *token** 
+> Primeiro de tudo faça a extração da pasta **Minescord** e abra ela em um editor de códigos, como por exemplo o Visual Studio Code, logo após abra o arquivo **config.json** que está no diretório principal do bot. Após ter aberto, volte ao site do **Discord Developer Portal** e na aba **BOT** clique em resetar token, após isso insira o token copiado na **config.json** onde está escrito **token**! Exemplo:
+
+
+```json
+{
+  "lang": "pt",
+  "token": "SeuTokenAqui"
+}
+```
+
+> Após fazer isso vá na pasta de **resources** que também está no diretorio principal do bot e abra o arquivo **config.json** e configure tudo de acordo com o que você preferir, lembre-se de colocar informações válidas para evitar erros! Faça o mesmo para o arquivo **status.json** e **embeds.json**, por está muito descrito as json não estou explicando como configurar cada coisa dela. Porém caso precise de mais suporte crie uma [issue](https://github.com/Henry8K/Minescord/issues).
+
+--- 
+
+> Próxima Página: [Hospedando](https://github.com/Henry8K/Minescord/blob/main/docs/wiki/pt/hospedando.md)
