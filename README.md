@@ -22,15 +22,16 @@
 
 # 📌 • Features
 
-```
-- More than 20 commands!
-- Multilingual bot!
-- Execution error prevention.
-- Commands designed especially for Minecraft server owners.
-- Support for bar commands only.
-- Intuitive settings and panels!
-- Intuitive messages and errors.
-```
+|  | Minescord |
+| --- | --- | 
+| 🔗 | More than 20 commands! |
+| 🌍 | Multilingual bot |
+| ❎ | Execution error prevention | 
+| 🚀 | Commands designed especially for Minecraft server owners. |
+| ⭐ | Slash command support |
+| 📫 | Intuitive messages and errors. |
+| 💻 | Intuitive settings and panels! | 
+
 
 ---
 
