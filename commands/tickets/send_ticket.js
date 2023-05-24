@@ -138,7 +138,7 @@ module.exports =
         {
             const userID = i.user.id;
             const userName = i.user.username;
-            const ticketCreatedMention = i.user.toString()
+            const ticketCreatedMention = i.user.toString();
             const ticketcreatedTitle = embed.ticket.created.title;
             const ticketcreatedDescription = embed.ticket.created.description;
             const ticketCreatedButtonLabel = embed.ticket.created.button.label;
